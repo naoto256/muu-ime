@@ -1,0 +1,1175 @@
+{
+  "oracle_commit": "legacy Swift codec oracle",
+  "cases": [
+    {
+      "id": "template",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "all-pos",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあかい\t赤い\tADJECTIVE\tnormal\nくる\t来る\tKURU_GROUP3_VERB\tnormal\nする\tする\tSURU_GROUP3_VERB\tnormal\nずる\tずる\tZURU_GROUP3_VERB\tnormal\nたべる\t食べる\tGROUP2_VERB\tnormal\nむう\t語\tABBREVIATION\tnormal\nむう\t語\tADJECTIVE_VERBAL_NOUN\tnormal\nむう\t語\tADVERB\tnormal\nむう\t語\tALPHABET\tnormal\nむう\t語\tCONJUNCTION\tnormal\nむう\t語\tCOUNTER_SUFFIX\tnormal\nむう\t語\tEMOTICON\tnormal\nむう\t語\tFAMILY_NAME\tnormal\nむう\t語\tFIRST_NAME\tnormal\nむう\t語\tFREE_STANDING_WORD\tnormal\nむう\t語\tGENERIC_SUFFIX\tnormal\nむう\t語\tINTERJECTION\tnormal\nむう\t語\tNOUN\tnormal\nむう\t語\tNO_POS\tnormal\nむう\t語\tNUMBER\tnormal\nむう\t語\tORGANIZATION_NAME\tnormal\nむう\t語\tPERSONAL_NAME\tnormal\nむう\t語\tPERSON_NAME_SUFFIX\tnormal\nむう\t語\tPLACE_NAME\tnormal\nむう\t語\tPLACE_NAME_SUFFIX\tnormal\nむう\t語\tPREFIX\tnormal\nむう\t語\tPRENOUN_ADJECTIVAL\tnormal\nむう\t語\tPROPER_NOUN\tnormal\nむう\t語\tPUNCTUATION\tnormal\nむう\t語\tSA_IRREGULAR_CONJUGATION_NOUN\tnormal\nむう\t語\tSENTENCE_ENDING_PARTICLE\tnormal\nむう\t語\tSUGGESTION_ONLY\tnormal\nむう\t語\tSUPPRESSION_WORD\tnormal\nむう\t語\tSYMBOL\tnormal\nむうかう\t語かう\tWA_GROUP1_VERB\tnormal\nむうかう\t語かふ\tHA_GROUP1_VERB\tnormal\nむうかく\t語かく\tKA_GROUP1_VERB\tnormal\nむうかぐ\t語かぐ\tGA_GROUP1_VERB\tnormal\nむうかす\t語かす\tSA_GROUP1_VERB\tnormal\nむうかつ\t語かつ\tTA_GROUP1_VERB\tnormal\nむうかぬ\t語かぬ\tNA_GROUP1_VERB\tnormal\nむうかぶ\t語かぶ\tBA_GROUP1_VERB\tnormal\nむうかむ\t語かむ\tMA_GROUP1_VERB\tnormal\nむうかる\t語かる\tRA_GROUP1_VERB\tnormal\nり\tり\tRU_GROUP3_VERB\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあかい\t赤い\tADJECTIVE\tnormal\nくる\t来る\tKURU_GROUP3_VERB\tnormal\nする\tする\tSURU_GROUP3_VERB\tnormal\nずる\tずる\tZURU_GROUP3_VERB\tnormal\nたべる\t食べる\tGROUP2_VERB\tnormal\nむう\t語\tABBREVIATION\tnormal\nむう\t語\tADJECTIVE_VERBAL_NOUN\tnormal\nむう\t語\tADVERB\tnormal\nむう\t語\tALPHABET\tnormal\nむう\t語\tCONJUNCTION\tnormal\nむう\t語\tCOUNTER_SUFFIX\tnormal\nむう\t語\tEMOTICON\tnormal\nむう\t語\tFAMILY_NAME\tnormal\nむう\t語\tFIRST_NAME\tnormal\nむう\t語\tFREE_STANDING_WORD\tnormal\nむう\t語\tGENERIC_SUFFIX\tnormal\nむう\t語\tINTERJECTION\tnormal\nむう\t語\tNOUN\tnormal\nむう\t語\tNO_POS\tnormal\nむう\t語\tNUMBER\tnormal\nむう\t語\tORGANIZATION_NAME\tnormal\nむう\t語\tPERSONAL_NAME\tnormal\nむう\t語\tPERSON_NAME_SUFFIX\tnormal\nむう\t語\tPLACE_NAME\tnormal\nむう\t語\tPLACE_NAME_SUFFIX\tnormal\nむう\t語\tPREFIX\tnormal\nむう\t語\tPRENOUN_ADJECTIVAL\tnormal\nむう\t語\tPROPER_NOUN\tnormal\nむう\t語\tPUNCTUATION\tnormal\nむう\t語\tSA_IRREGULAR_CONJUGATION_NOUN\tnormal\nむう\t語\tSENTENCE_ENDING_PARTICLE\tnormal\nむう\t語\tSUGGESTION_ONLY\tnormal\nむう\t語\tSUPPRESSION_WORD\tnormal\nむう\t語\tSYMBOL\tnormal\nむうかう\t語かう\tWA_GROUP1_VERB\tnormal\nむうかう\t語かふ\tHA_GROUP1_VERB\tnormal\nむうかく\t語かく\tKA_GROUP1_VERB\tnormal\nむうかぐ\t語かぐ\tGA_GROUP1_VERB\tnormal\nむうかす\t語かす\tSA_GROUP1_VERB\tnormal\nむうかつ\t語かつ\tTA_GROUP1_VERB\tnormal\nむうかぬ\t語かぬ\tNA_GROUP1_VERB\tnormal\nむうかぶ\t語かぶ\tBA_GROUP1_VERB\tnormal\nむうかむ\t語かむ\tMA_GROUP1_VERB\tnormal\nむうかる\t語かる\tRA_GROUP1_VERB\tnormal\nり\tり\tRU_GROUP3_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "empty",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\n",
+      "intentional": null
+    },
+    {
+      "id": "priority-high",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\thigh\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\thigh\n",
+      "intentional": null
+    },
+    {
+      "id": "priority-normal",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "priority-low",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tlow\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tlow\n",
+      "intentional": null
+    },
+    {
+      "id": "priority-Normal",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tNormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "priority-",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\t\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "reading-8",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nが\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nが\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-9",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nが\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nが\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-10",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nガ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nが\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-11",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nｶﾞ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nが\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-12",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nゝ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nゝ\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-13",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nゞ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nゞ\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-14",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nヽ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nゝ\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-15",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nヾ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nゞ\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-16",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nー\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nー\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-17",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\t表層\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "reading-18",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああああ\t表層\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "reading-19",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\na\t表層\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "reading-20",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\n\t表層\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "reading-21",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tい\t表層\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "surface-22",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\té\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\té\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "surface-23",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\té\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\té\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "surface-24",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "surface-25",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\txxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "surface-26",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "surface-27",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t​\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "surface-28",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t \tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t \tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "surface-29",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t﻿\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "surface-30",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\t\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "surface-31",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\ta\tb\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x0",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA\u0000B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x8",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA\bB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x9",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA\tB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xa",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA\nB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xd",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA\rB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x1f",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA\u001fB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x20",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA B\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA B\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "control-0x7f",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tAB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x85",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tAB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x9f",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tAB\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xa0",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA B\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA B\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "control-0xad",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA­B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x600",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA؀B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x61c",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA؜B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x200b",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA​B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x200e",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA‎B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x2028",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA B\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA B\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "control-0x202e",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA‮B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0x2060",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA⁠B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xfeff",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA﻿B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xfff9",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA￹B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xe0001",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA󠀁B\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "control-0xe0100",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA󠄀B\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nあ\tA󠄀B\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "id-55",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.lower\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.lower\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "id-56",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\tOrg.upper\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tOrg.upper\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "id-57",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\t-leading\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\t-leading\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": "leading-punctuation"
+    },
+    {
+      "id": "id-58",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\t.leading\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\t.leading\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": "leading-punctuation"
+    },
+    {
+      "id": "id-59",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\t_leading\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\t_leading\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": "leading-punctuation"
+    },
+    {
+      "id": "id-60",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\t-Upper\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "id-61",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\taaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\taaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "id-62",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\taaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "id-63",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\t日本\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "id-64",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\ta/b\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "id-65",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\t\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "no-terminal-lf",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "extra-terminal-lf",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "crlf",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\r\n#id\torg.example.dictionary\r\n#name\t辞書名\r\n#version\t1.0\r\n#author\t作者名\r\n#license\tライセンス\r\n#provenance\t出典または説明\r\nreading\tsurface\tpos\tpriority\r\nむう\tMuu\tNOUN\tnormal\r\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "bom",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "﻿#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "legacy-noun",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tnoun\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "bad-columns",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tunknown\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "duplicate-row",
+      "kind": "native",
+      "file_name": "例.txt",
+      "source": "#!muu-dictionary\t1\n#id\torg.example.dictionary\n#name\t辞書名\n#version\t1.0\n#author\t作者名\n#license\tライセンス\n#provenance\t出典または説明\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\nむう\tMuu\tNOUN\tnormal\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ADJECTIVE",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nあかい\t赤い\t形容詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.48fa4e7c657e26eca4817d85ac275499\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nあかい\t赤い\tADJECTIVE\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-KURU_GROUP3_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nくる\t来る\t動詞カ変\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.337c630df444233bd8a2e391a3503025\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nくる\t来る\tKURU_GROUP3_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SURU_GROUP3_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nする\tする\t動詞サ変\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.074482615fc26ac15692085e393fc10c\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nする\tする\tSURU_GROUP3_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ZURU_GROUP3_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nずる\tずる\t動詞ザ変\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.633bc43de0bd04167c4152e8d9560ea7\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nずる\tずる\tZURU_GROUP3_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-GROUP2_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nたべる\t食べる\t動詞一段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.8d535c0cde383f4fd2151a8adf21c936\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nたべる\t食べる\tGROUP2_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ABBREVIATION",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t短縮よみ\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.1b637f446413442c158dbaca1ca5130c\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tABBREVIATION\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ADJECTIVE_VERBAL_NOUN",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t名詞形動\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.576fc5e713eb46b7f96a2ea80c267256\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tADJECTIVE_VERBAL_NOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ADVERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t副詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.b7528d0cfccb230727de8ed67e265a17\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tADVERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ALPHABET",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\tアルファベット\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.80b49409dfd31adfc1ba4f87bee0dfb4\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tALPHABET\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-CONJUNCTION",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t接続詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.69d1f008b8a688a0e48969d3e423f537\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tCONJUNCTION\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-COUNTER_SUFFIX",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t助数詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.12f1e3d5f85dfec4903697aed7b9c1a2\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tCOUNTER_SUFFIX\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-EMOTICON",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t顔文字\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.d32c1cafb828df782945d497e4c3df28\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tEMOTICON\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-FAMILY_NAME",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t姓\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.8ff647ead17c63d435f658a1555a6edc\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tFAMILY_NAME\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-FIRST_NAME",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t名\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.2ba0c4c4bdd9dbfbfae4697d449806e0\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tFIRST_NAME\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-FREE_STANDING_WORD",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t独立語\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.02459cf77bc0bf0bf1f341afa96628d9\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tFREE_STANDING_WORD\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-GENERIC_SUFFIX",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t接尾一般\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.7049abc77ed18c6396fc68b57664dc32\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tGENERIC_SUFFIX\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-INTERJECTION",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t感動詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.63225b3530d90fa0910668ffa4462004\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tINTERJECTION\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-NOUN",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.a945c1d0b7ad5b36aa9e7d0a89a0e58d\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-NO_POS",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t品詞なし\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.017d21023639da7ea30cb25550357033\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tNO_POS\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-NUMBER",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t数\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.f84b480dfc49b4574c6713d8ec7b0f84\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tNUMBER\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-ORGANIZATION_NAME",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t組織\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.ad3c6a32782d9898a9995fb6b388b7f2\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tORGANIZATION_NAME\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PERSONAL_NAME",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t人名\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.9ea756b84efd36254a746822c77306f1\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPERSONAL_NAME\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PERSON_NAME_SUFFIX",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t接尾人名\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.55f1c024ace38d551b8e6b135ee7b717\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPERSON_NAME_SUFFIX\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PLACE_NAME",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t地名\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.321dec6af1115ab2ed96f76bafdb663c\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPLACE_NAME\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PLACE_NAME_SUFFIX",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t接尾地名\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.df31f36f78046c58a293d00640c9c850\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPLACE_NAME_SUFFIX\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PREFIX",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t接頭語\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.8b606763b99e70a4d999e8b567ca532c\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPREFIX\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PRENOUN_ADJECTIVAL",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t連体詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.d55fc0903319adb1aaf289384061c769\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPRENOUN_ADJECTIVAL\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PROPER_NOUN",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t固有名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.438fa50408326596475f4968ff9978dc\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPROPER_NOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-PUNCTUATION",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t句読点\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.5e8615c86008473c647c138c96bf53fd\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tPUNCTUATION\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SA_IRREGULAR_CONJUGATION_NOUN",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t名詞サ変\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.a96c461f0078c9f89d625df9fde02de3\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tSA_IRREGULAR_CONJUGATION_NOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SENTENCE_ENDING_PARTICLE",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t終助詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.951f53aaf260a87d4e0e46cd46a6c2ea\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tSENTENCE_ENDING_PARTICLE\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SUGGESTION_ONLY",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\tサジェストのみ\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.d4cb67aecba55a2b04261c79bbc4c728\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tSUGGESTION_ONLY\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SUPPRESSION_WORD",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t抑制単語\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.092cd5d74c3b9beaf088175253eac690\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tSUPPRESSION_WORD\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SYMBOL",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\t語\t記号\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.a75cd9ef0bd1c034f11171e2786e9fd3\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\t語\tSYMBOL\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-WA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかう\t語かう\t動詞ワ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.4ab7bd67c1915543b4c12e3c6e412c0a\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかう\t語かう\tWA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-HA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかう\t語かふ\t動詞ハ行四段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.f2ce62b5f27aefaa92dc157a29f39b78\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかう\t語かふ\tHA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-KA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかく\t語かく\t動詞カ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.6146d3a0a061ccae765282413e559a4d\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかく\t語かく\tKA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-GA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかぐ\t語かぐ\t動詞ガ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.5e2ad36399148ebb6060caf7e935a8e0\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかぐ\t語かぐ\tGA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-SA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかす\t語かす\t動詞サ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.bf71700c1ffb9b5c9a9056f79145b01b\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかす\t語かす\tSA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-TA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかつ\t語かつ\t動詞タ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.9210f54eff77a4abeec8b596adeec6ab\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかつ\t語かつ\tTA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-NA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかぬ\t語かぬ\t動詞ナ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.b607c8456d6a743b2cd4e733267f14b5\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかぬ\t語かぬ\tNA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-BA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかぶ\t語かぶ\t動詞バ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.2a892c67e091602d6db3095e74c5d4c9\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかぶ\t語かぶ\tBA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-MA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかむ\t語かむ\t動詞マ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.2d8c04b5bfe5fb2e309a086ad758ebc6\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかむ\t語かむ\tMA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-RA_GROUP1_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむうかる\t語かる\t動詞ラ行五段\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.de9fca9fb844e4c89d3bc6e47a384014\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむうかる\t語かる\tRA_GROUP1_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-pos-RU_GROUP3_VERB",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nり\tり\t動詞ラ変\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.b30e287a2a2fd332b7b8f9e0beac7ff0\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nり\tり\tRU_GROUP3_VERB\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-dedupe",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\tfirst\nムウ\tMuu\t名詞\tsecond\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.6e6c26dbf7a41b90a0e9e9ca306a8000\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-crlf",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\r\nむう\tMuu\t名詞\r\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.114400274784a8fb33c7e8f980000358\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\n",
+      "intentional": null
+    },
+    {
+      "id": "google-bom",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "﻿!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.7dd4b30b9884306ba98eb099d186ea8f\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-five-cols",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT\nむう\tMuu\t名詞\textra\tbad\n",
+      "expected_accepted": false,
+      "canonical": null,
+      "intentional": null
+    },
+    {
+      "id": "google-header-whitespace",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "​!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.036f47f18f2442a4092b9cf9b2e82885\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-123",
+      "kind": "google",
+      "file_name": "例.txt",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\t例\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: 例.txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-124",
+      "kind": "google",
+      "file_name": "foo",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\tfoo\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: foo\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-125",
+      "kind": "google",
+      "file_name": ".foo",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\t.foo\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: .foo\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-126",
+      "kind": "google",
+      "file_name": ".foo.txt",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\t.foo\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: .foo.txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-127",
+      "kind": "google",
+      "file_name": "foo.",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\tfoo.\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: foo.\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-128",
+      "kind": "google",
+      "file_name": "foo..txt",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\tfoo.\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: foo..txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    },
+    {
+      "id": "google-filename-131",
+      "kind": "google",
+      "file_name": "a\\b.txt",
+      "source": "!!DICUT1\nむう\tMuu\t名詞\n",
+      "expected_accepted": true,
+      "canonical": "#!muu-dictionary\t1\n#id\tgoogle.eb7ca675a691f39b96f8910733b5274a\n#name\ta\\b\n#version\timported\n#author\tGoogle日本語入力ユーザー辞書\n#license\t未指定\n#provenance\tGoogle日本語入力エクスポート: a\\b.txt\nreading\tsurface\tpos\tpriority\nむう\tMuu\tNOUN\tnormal\n",
+      "intentional": null
+    }
+  ]
+}

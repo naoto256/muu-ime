@@ -1,0 +1,1586 @@
+# Muu original romaji table, derived independently from standard Japanese
+# romanization conventions. This data was not copied from any existing IME.
+# SPDX-License-Identifier: MIT
+
+schema_version = 1
+name = "muu-original"
+boundary_inputs = [
+  "!", "\"", "#", "$", "%", "&", "'", "(", ")", "*", "+", ",", "-",
+  ".", "/", ":", ";", "<", "=", ">", "?", "@", "[", "\\", "]", "^",
+  "_", "`", "{", "|", "}", "~",
+]
+
+[nasal]
+continue_with = ["a", "i", "u", "e", "o", "y"]
+explicit_with = ["n", "'"]
+commit_before = [
+  "b", "c", "d", "f", "g", "h", "j", "k", "l", "m", "p", "q", "r", "s",
+  "t", "v", "w", "x", "z", "!", "\"", "#", "$", "%", "&", "'", "(",
+  ")", "*", "+", ",", "-", ".", "/", ":", ";", "<", "=", ">", "?", "@",
+  "[", "\\", "]", "^", "_", "`", "{", "|", "}", "~",
+]
+
+# Vowels
+[[entry]]
+input = "a"
+output = "あ"
+next = ""
+
+[[entry]]
+input = "i"
+output = "い"
+next = ""
+
+[[entry]]
+input = "u"
+output = "う"
+next = ""
+
+[[entry]]
+input = "e"
+output = "え"
+next = ""
+
+[[entry]]
+input = "o"
+output = "お"
+next = ""
+
+# Basic rows
+[[entry]]
+input = "ka"
+output = "か"
+next = ""
+
+[[entry]]
+input = "ki"
+output = "き"
+next = ""
+
+[[entry]]
+input = "ku"
+output = "く"
+next = ""
+
+[[entry]]
+input = "ke"
+output = "け"
+next = ""
+
+[[entry]]
+input = "ko"
+output = "こ"
+next = ""
+
+[[entry]]
+input = "sa"
+output = "さ"
+next = ""
+
+[[entry]]
+input = "shi"
+output = "し"
+next = ""
+
+[[entry]]
+input = "si"
+output = "し"
+next = ""
+
+[[entry]]
+input = "su"
+output = "す"
+next = ""
+
+[[entry]]
+input = "se"
+output = "せ"
+next = ""
+
+[[entry]]
+input = "so"
+output = "そ"
+next = ""
+
+[[entry]]
+input = "ta"
+output = "た"
+next = ""
+
+[[entry]]
+input = "chi"
+output = "ち"
+next = ""
+
+[[entry]]
+input = "ti"
+output = "ち"
+next = ""
+
+[[entry]]
+input = "tsu"
+output = "つ"
+next = ""
+
+[[entry]]
+input = "tu"
+output = "つ"
+next = ""
+
+[[entry]]
+input = "te"
+output = "て"
+next = ""
+
+[[entry]]
+input = "to"
+output = "と"
+next = ""
+
+[[entry]]
+input = "na"
+output = "な"
+next = ""
+
+[[entry]]
+input = "ni"
+output = "に"
+next = ""
+
+[[entry]]
+input = "nu"
+output = "ぬ"
+next = ""
+
+[[entry]]
+input = "ne"
+output = "ね"
+next = ""
+
+[[entry]]
+input = "no"
+output = "の"
+next = ""
+
+[[entry]]
+input = "ha"
+output = "は"
+next = ""
+
+[[entry]]
+input = "hi"
+output = "ひ"
+next = ""
+
+[[entry]]
+input = "fu"
+output = "ふ"
+next = ""
+
+[[entry]]
+input = "hu"
+output = "ふ"
+next = ""
+
+[[entry]]
+input = "he"
+output = "へ"
+next = ""
+
+[[entry]]
+input = "ho"
+output = "ほ"
+next = ""
+
+[[entry]]
+input = "ma"
+output = "ま"
+next = ""
+
+[[entry]]
+input = "mi"
+output = "み"
+next = ""
+
+[[entry]]
+input = "mu"
+output = "む"
+next = ""
+
+[[entry]]
+input = "me"
+output = "め"
+next = ""
+
+[[entry]]
+input = "mo"
+output = "も"
+next = ""
+
+[[entry]]
+input = "ya"
+output = "や"
+next = ""
+
+[[entry]]
+input = "yu"
+output = "ゆ"
+next = ""
+
+[[entry]]
+input = "yo"
+output = "よ"
+next = ""
+
+[[entry]]
+input = "ra"
+output = "ら"
+next = ""
+
+[[entry]]
+input = "ri"
+output = "り"
+next = ""
+
+[[entry]]
+input = "ru"
+output = "る"
+next = ""
+
+[[entry]]
+input = "re"
+output = "れ"
+next = ""
+
+[[entry]]
+input = "ro"
+output = "ろ"
+next = ""
+
+[[entry]]
+input = "wa"
+output = "わ"
+next = ""
+
+[[entry]]
+input = "wo"
+output = "を"
+next = ""
+
+# Voiced and semi-voiced rows
+[[entry]]
+input = "ga"
+output = "が"
+next = ""
+
+[[entry]]
+input = "gi"
+output = "ぎ"
+next = ""
+
+[[entry]]
+input = "gu"
+output = "ぐ"
+next = ""
+
+[[entry]]
+input = "ge"
+output = "げ"
+next = ""
+
+[[entry]]
+input = "go"
+output = "ご"
+next = ""
+
+[[entry]]
+input = "za"
+output = "ざ"
+next = ""
+
+[[entry]]
+input = "ji"
+output = "じ"
+next = ""
+
+[[entry]]
+input = "zi"
+output = "じ"
+next = ""
+
+[[entry]]
+input = "zu"
+output = "ず"
+next = ""
+
+[[entry]]
+input = "ze"
+output = "ぜ"
+next = ""
+
+[[entry]]
+input = "zo"
+output = "ぞ"
+next = ""
+
+[[entry]]
+input = "da"
+output = "だ"
+next = ""
+
+[[entry]]
+input = "di"
+output = "ぢ"
+next = ""
+
+[[entry]]
+input = "du"
+output = "づ"
+next = ""
+
+[[entry]]
+input = "de"
+output = "で"
+next = ""
+
+[[entry]]
+input = "do"
+output = "ど"
+next = ""
+
+[[entry]]
+input = "ba"
+output = "ば"
+next = ""
+
+[[entry]]
+input = "bi"
+output = "び"
+next = ""
+
+[[entry]]
+input = "bu"
+output = "ぶ"
+next = ""
+
+[[entry]]
+input = "be"
+output = "べ"
+next = ""
+
+[[entry]]
+input = "bo"
+output = "ぼ"
+next = ""
+
+[[entry]]
+input = "pa"
+output = "ぱ"
+next = ""
+
+[[entry]]
+input = "pi"
+output = "ぴ"
+next = ""
+
+[[entry]]
+input = "pu"
+output = "ぷ"
+next = ""
+
+[[entry]]
+input = "pe"
+output = "ぺ"
+next = ""
+
+[[entry]]
+input = "po"
+output = "ぽ"
+next = ""
+
+[[entry]]
+input = "vu"
+output = "ゔ"
+next = ""
+
+# Foreign-sound extensions
+[[entry]]
+input = "fa"
+output = "ふぁ"
+next = ""
+
+[[entry]]
+input = "fi"
+output = "ふぃ"
+next = ""
+
+[[entry]]
+input = "fe"
+output = "ふぇ"
+next = ""
+
+[[entry]]
+input = "fo"
+output = "ふぉ"
+next = ""
+
+[[entry]]
+input = "fyu"
+output = "ふゅ"
+next = ""
+
+# Common extended-sound compatibility families
+[[entry]]
+input = "je"
+output = "じぇ"
+next = ""
+
+[[entry]]
+input = "va"
+output = "ゔぁ"
+next = ""
+
+[[entry]]
+input = "vi"
+output = "ゔぃ"
+next = ""
+
+[[entry]]
+input = "ve"
+output = "ゔぇ"
+next = ""
+
+[[entry]]
+input = "vo"
+output = "ゔぉ"
+next = ""
+
+[[entry]]
+input = "vya"
+output = "ゔゃ"
+next = ""
+
+[[entry]]
+input = "vyi"
+output = "ゔぃ"
+next = ""
+
+[[entry]]
+input = "vyu"
+output = "ゔゅ"
+next = ""
+
+[[entry]]
+input = "vye"
+output = "ゔぇ"
+next = ""
+
+[[entry]]
+input = "vyo"
+output = "ゔょ"
+next = ""
+
+[[entry]]
+input = "kyi"
+output = "きぃ"
+next = ""
+
+[[entry]]
+input = "kye"
+output = "きぇ"
+next = ""
+
+[[entry]]
+input = "gyi"
+output = "ぎぃ"
+next = ""
+
+[[entry]]
+input = "gye"
+output = "ぎぇ"
+next = ""
+
+[[entry]]
+input = "syi"
+output = "しぃ"
+next = ""
+
+[[entry]]
+input = "sye"
+output = "しぇ"
+next = ""
+
+[[entry]]
+input = "she"
+output = "しぇ"
+next = ""
+
+[[entry]]
+input = "zya"
+output = "じゃ"
+next = ""
+
+[[entry]]
+input = "zyi"
+output = "じぃ"
+next = ""
+
+[[entry]]
+input = "zyu"
+output = "じゅ"
+next = ""
+
+[[entry]]
+input = "zye"
+output = "じぇ"
+next = ""
+
+[[entry]]
+input = "zyo"
+output = "じょ"
+next = ""
+
+[[entry]]
+input = "tyi"
+output = "ちぃ"
+next = ""
+
+[[entry]]
+input = "tye"
+output = "ちぇ"
+next = ""
+
+[[entry]]
+input = "che"
+output = "ちぇ"
+next = ""
+
+[[entry]]
+input = "cyi"
+output = "ちぃ"
+next = ""
+
+[[entry]]
+input = "cye"
+output = "ちぇ"
+next = ""
+
+[[entry]]
+input = "dya"
+output = "ぢゃ"
+next = ""
+
+[[entry]]
+input = "dyi"
+output = "ぢぃ"
+next = ""
+
+[[entry]]
+input = "dyu"
+output = "ぢゅ"
+next = ""
+
+[[entry]]
+input = "dye"
+output = "ぢぇ"
+next = ""
+
+[[entry]]
+input = "dyo"
+output = "ぢょ"
+next = ""
+
+[[entry]]
+input = "nyi"
+output = "にぃ"
+next = ""
+
+[[entry]]
+input = "nye"
+output = "にぇ"
+next = ""
+
+[[entry]]
+input = "hyi"
+output = "ひぃ"
+next = ""
+
+[[entry]]
+input = "hye"
+output = "ひぇ"
+next = ""
+
+[[entry]]
+input = "byi"
+output = "びぃ"
+next = ""
+
+[[entry]]
+input = "bye"
+output = "びぇ"
+next = ""
+
+[[entry]]
+input = "pyi"
+output = "ぴぃ"
+next = ""
+
+[[entry]]
+input = "pye"
+output = "ぴぇ"
+next = ""
+
+[[entry]]
+input = "myi"
+output = "みぃ"
+next = ""
+
+[[entry]]
+input = "mye"
+output = "みぇ"
+next = ""
+
+[[entry]]
+input = "ryi"
+output = "りぃ"
+next = ""
+
+[[entry]]
+input = "rye"
+output = "りぇ"
+next = ""
+
+[[entry]]
+input = "jyi"
+output = "じぃ"
+next = ""
+
+[[entry]]
+input = "jye"
+output = "じぇ"
+next = ""
+
+[[entry]]
+input = "tsa"
+output = "つぁ"
+next = ""
+
+[[entry]]
+input = "tsi"
+output = "つぃ"
+next = ""
+
+[[entry]]
+input = "tse"
+output = "つぇ"
+next = ""
+
+[[entry]]
+input = "tso"
+output = "つぉ"
+next = ""
+
+[[entry]]
+input = "tha"
+output = "てゃ"
+next = ""
+
+[[entry]]
+input = "thi"
+output = "てぃ"
+next = ""
+
+[[entry]]
+input = "thu"
+output = "てゅ"
+next = ""
+
+[[entry]]
+input = "the"
+output = "てぇ"
+next = ""
+
+[[entry]]
+input = "tho"
+output = "てょ"
+next = ""
+
+[[entry]]
+input = "dha"
+output = "でゃ"
+next = ""
+
+[[entry]]
+input = "dhi"
+output = "でぃ"
+next = ""
+
+[[entry]]
+input = "dhu"
+output = "でゅ"
+next = ""
+
+[[entry]]
+input = "dhe"
+output = "でぇ"
+next = ""
+
+[[entry]]
+input = "dho"
+output = "でょ"
+next = ""
+
+[[entry]]
+input = "twa"
+output = "とぁ"
+next = ""
+
+[[entry]]
+input = "twi"
+output = "とぃ"
+next = ""
+
+[[entry]]
+input = "twu"
+output = "とぅ"
+next = ""
+
+[[entry]]
+input = "twe"
+output = "とぇ"
+next = ""
+
+[[entry]]
+input = "two"
+output = "とぉ"
+next = ""
+
+[[entry]]
+input = "dwa"
+output = "どぁ"
+next = ""
+
+[[entry]]
+input = "dwi"
+output = "どぃ"
+next = ""
+
+[[entry]]
+input = "dwu"
+output = "どぅ"
+next = ""
+
+[[entry]]
+input = "dwe"
+output = "どぇ"
+next = ""
+
+[[entry]]
+input = "dwo"
+output = "どぉ"
+next = ""
+
+[[entry]]
+input = "fya"
+output = "ふゃ"
+next = ""
+
+[[entry]]
+input = "fyo"
+output = "ふょ"
+next = ""
+
+[[entry]]
+input = "hwa"
+output = "ふぁ"
+next = ""
+
+[[entry]]
+input = "hwi"
+output = "ふぃ"
+next = ""
+
+[[entry]]
+input = "hwe"
+output = "ふぇ"
+next = ""
+
+[[entry]]
+input = "hwo"
+output = "ふぉ"
+next = ""
+
+[[entry]]
+input = "hwyu"
+output = "ふゅ"
+next = ""
+
+[[entry]]
+input = "qa"
+output = "くぁ"
+next = ""
+
+[[entry]]
+input = "qi"
+output = "くぃ"
+next = ""
+
+[[entry]]
+input = "qu"
+output = "く"
+next = ""
+
+[[entry]]
+input = "qe"
+output = "くぇ"
+next = ""
+
+[[entry]]
+input = "qo"
+output = "くぉ"
+next = ""
+
+[[entry]]
+input = "kwa"
+output = "くぁ"
+next = ""
+
+[[entry]]
+input = "kwi"
+output = "くぃ"
+next = ""
+
+[[entry]]
+input = "kwu"
+output = "くぅ"
+next = ""
+
+[[entry]]
+input = "kwe"
+output = "くぇ"
+next = ""
+
+[[entry]]
+input = "kwo"
+output = "くぉ"
+next = ""
+
+[[entry]]
+input = "gwa"
+output = "ぐぁ"
+next = ""
+
+[[entry]]
+input = "gwi"
+output = "ぐぃ"
+next = ""
+
+[[entry]]
+input = "gwu"
+output = "ぐぅ"
+next = ""
+
+[[entry]]
+input = "gwe"
+output = "ぐぇ"
+next = ""
+
+[[entry]]
+input = "gwo"
+output = "ぐぉ"
+next = ""
+
+[[entry]]
+input = "swa"
+output = "すぁ"
+next = ""
+
+[[entry]]
+input = "swi"
+output = "すぃ"
+next = ""
+
+[[entry]]
+input = "swu"
+output = "すぅ"
+next = ""
+
+[[entry]]
+input = "swe"
+output = "すぇ"
+next = ""
+
+[[entry]]
+input = "swo"
+output = "すぉ"
+next = ""
+
+[[entry]]
+input = "zwa"
+output = "ずぁ"
+next = ""
+
+[[entry]]
+input = "zwi"
+output = "ずぃ"
+next = ""
+
+[[entry]]
+input = "zwu"
+output = "ずぅ"
+next = ""
+
+[[entry]]
+input = "zwe"
+output = "ずぇ"
+next = ""
+
+[[entry]]
+input = "zwo"
+output = "ずぉ"
+next = ""
+
+[[entry]]
+input = "ye"
+output = "いぇ"
+next = ""
+
+[[entry]]
+input = "wi"
+output = "うぃ"
+next = ""
+
+[[entry]]
+input = "we"
+output = "うぇ"
+next = ""
+
+[[entry]]
+input = "wha"
+output = "うぁ"
+next = ""
+
+[[entry]]
+input = "whi"
+output = "うぃ"
+next = ""
+
+[[entry]]
+input = "whu"
+output = "う"
+next = ""
+
+[[entry]]
+input = "whe"
+output = "うぇ"
+next = ""
+
+[[entry]]
+input = "who"
+output = "うぉ"
+next = ""
+
+[[entry]]
+input = "qq"
+output = "っ"
+next = "q"
+
+[[entry]]
+input = "tch"
+output = "っ"
+next = "ch"
+
+# Contracted sounds
+[[entry]]
+input = "kya"
+output = "きゃ"
+next = ""
+
+[[entry]]
+input = "kyu"
+output = "きゅ"
+next = ""
+
+[[entry]]
+input = "kyo"
+output = "きょ"
+next = ""
+
+[[entry]]
+input = "sha"
+output = "しゃ"
+next = ""
+
+[[entry]]
+input = "shu"
+output = "しゅ"
+next = ""
+
+[[entry]]
+input = "sho"
+output = "しょ"
+next = ""
+
+[[entry]]
+input = "sya"
+output = "しゃ"
+next = ""
+
+[[entry]]
+input = "syu"
+output = "しゅ"
+next = ""
+
+[[entry]]
+input = "syo"
+output = "しょ"
+next = ""
+
+[[entry]]
+input = "cha"
+output = "ちゃ"
+next = ""
+
+[[entry]]
+input = "chu"
+output = "ちゅ"
+next = ""
+
+[[entry]]
+input = "cho"
+output = "ちょ"
+next = ""
+
+[[entry]]
+input = "cya"
+output = "ちゃ"
+next = ""
+
+[[entry]]
+input = "cyu"
+output = "ちゅ"
+next = ""
+
+[[entry]]
+input = "cyo"
+output = "ちょ"
+next = ""
+
+[[entry]]
+input = "tya"
+output = "ちゃ"
+next = ""
+
+[[entry]]
+input = "tyu"
+output = "ちゅ"
+next = ""
+
+[[entry]]
+input = "tyo"
+output = "ちょ"
+next = ""
+
+[[entry]]
+input = "nya"
+output = "にゃ"
+next = ""
+
+[[entry]]
+input = "nyu"
+output = "にゅ"
+next = ""
+
+[[entry]]
+input = "nyo"
+output = "にょ"
+next = ""
+
+[[entry]]
+input = "hya"
+output = "ひゃ"
+next = ""
+
+[[entry]]
+input = "hyu"
+output = "ひゅ"
+next = ""
+
+[[entry]]
+input = "hyo"
+output = "ひょ"
+next = ""
+
+[[entry]]
+input = "mya"
+output = "みゃ"
+next = ""
+
+[[entry]]
+input = "myu"
+output = "みゅ"
+next = ""
+
+[[entry]]
+input = "myo"
+output = "みょ"
+next = ""
+
+[[entry]]
+input = "rya"
+output = "りゃ"
+next = ""
+
+[[entry]]
+input = "ryu"
+output = "りゅ"
+next = ""
+
+[[entry]]
+input = "ryo"
+output = "りょ"
+next = ""
+
+[[entry]]
+input = "gya"
+output = "ぎゃ"
+next = ""
+
+[[entry]]
+input = "gyu"
+output = "ぎゅ"
+next = ""
+
+[[entry]]
+input = "gyo"
+output = "ぎょ"
+next = ""
+
+[[entry]]
+input = "ja"
+output = "じゃ"
+next = ""
+
+[[entry]]
+input = "ju"
+output = "じゅ"
+next = ""
+
+[[entry]]
+input = "jo"
+output = "じょ"
+next = ""
+
+[[entry]]
+input = "jya"
+output = "じゃ"
+next = ""
+
+[[entry]]
+input = "jyu"
+output = "じゅ"
+next = ""
+
+[[entry]]
+input = "jyo"
+output = "じょ"
+next = ""
+
+[[entry]]
+input = "bya"
+output = "びゃ"
+next = ""
+
+[[entry]]
+input = "byu"
+output = "びゅ"
+next = ""
+
+[[entry]]
+input = "byo"
+output = "びょ"
+next = ""
+
+[[entry]]
+input = "pya"
+output = "ぴゃ"
+next = ""
+
+[[entry]]
+input = "pyu"
+output = "ぴゅ"
+next = ""
+
+[[entry]]
+input = "pyo"
+output = "ぴょ"
+next = ""
+
+# Small kana (x- and l- spellings are independently authored aliases)
+[[entry]]
+input = "xa"
+output = "ぁ"
+next = ""
+
+[[entry]]
+input = "xi"
+output = "ぃ"
+next = ""
+
+[[entry]]
+input = "xu"
+output = "ぅ"
+next = ""
+
+[[entry]]
+input = "xe"
+output = "ぇ"
+next = ""
+
+[[entry]]
+input = "xo"
+output = "ぉ"
+next = ""
+
+[[entry]]
+input = "la"
+output = "ぁ"
+next = ""
+
+[[entry]]
+input = "li"
+output = "ぃ"
+next = ""
+
+[[entry]]
+input = "lu"
+output = "ぅ"
+next = ""
+
+[[entry]]
+input = "le"
+output = "ぇ"
+next = ""
+
+[[entry]]
+input = "lo"
+output = "ぉ"
+next = ""
+
+[[entry]]
+input = "xya"
+output = "ゃ"
+next = ""
+
+[[entry]]
+input = "xyu"
+output = "ゅ"
+next = ""
+
+[[entry]]
+input = "xyo"
+output = "ょ"
+next = ""
+
+[[entry]]
+input = "lya"
+output = "ゃ"
+next = ""
+
+[[entry]]
+input = "lyu"
+output = "ゅ"
+next = ""
+
+[[entry]]
+input = "lyo"
+output = "ょ"
+next = ""
+
+[[entry]]
+input = "xtu"
+output = "っ"
+next = ""
+
+[[entry]]
+input = "xtsu"
+output = "っ"
+next = ""
+
+[[entry]]
+input = "ltu"
+output = "っ"
+next = ""
+
+[[entry]]
+input = "ltsu"
+output = "っ"
+next = ""
+
+[[entry]]
+input = "xwa"
+output = "ゎ"
+next = ""
+
+[[entry]]
+input = "lwa"
+output = "ゎ"
+next = ""
+
+# Sokuon: emit small tsu and retain the doubled consonant as pending.
+[[entry]]
+input = "bb"
+output = "っ"
+next = "b"
+
+[[entry]]
+input = "cc"
+output = "っ"
+next = "c"
+
+[[entry]]
+input = "dd"
+output = "っ"
+next = "d"
+
+[[entry]]
+input = "ff"
+output = "っ"
+next = "f"
+
+[[entry]]
+input = "gg"
+output = "っ"
+next = "g"
+
+[[entry]]
+input = "hh"
+output = "っ"
+next = "h"
+
+[[entry]]
+input = "jj"
+output = "っ"
+next = "j"
+
+[[entry]]
+input = "kk"
+output = "っ"
+next = "k"
+
+[[entry]]
+input = "mm"
+output = "っ"
+next = "m"
+
+[[entry]]
+input = "pp"
+output = "っ"
+next = "p"
+
+[[entry]]
+input = "rr"
+output = "っ"
+next = "r"
+
+[[entry]]
+input = "ss"
+output = "っ"
+next = "s"
+
+[[entry]]
+input = "tt"
+output = "っ"
+next = "t"
+
+[[entry]]
+input = "vv"
+output = "っ"
+next = "v"
+
+[[entry]]
+input = "ww"
+output = "っ"
+next = "w"
+
+[[entry]]
+input = "yy"
+output = "っ"
+next = "y"
+
+[[entry]]
+input = "zz"
+output = "っ"
+next = "z"
+
+# Explicit nasal forms
+[[entry]]
+input = "nn"
+output = "ん"
+next = ""
+
+[[entry]]
+input = "n'"
+output = "ん"
+next = ""
+
+# Japanese punctuation
+[[entry]]
+input = ","
+output = "、"
+next = ""
+
+[[entry]]
+input = "."
+output = "。"
+next = ""
+
+[[entry]]
+input = "-"
+output = "ー"
+next = ""
+
+[[entry]]
+input = "["
+output = "「"
+next = ""
+
+[[entry]]
+input = "]"
+output = "」"
+next = ""
+
+[[entry]]
+input = "/"
+output = "・"
+next = ""
+
+[[entry]]
+input = "("
+output = "（"
+next = ""
+
+[[entry]]
+input = ")"
+output = "）"
+next = ""
+
+[[entry]]
+input = "!"
+output = "！"
+next = ""
+
+[[entry]]
+input = "?"
+output = "？"
+next = ""
+
+[[entry]]
+input = "\""
+output = "＂"
+next = ""
+
+[[entry]]
+input = "#"
+output = "＃"
+next = ""
+
+[[entry]]
+input = "$"
+output = "＄"
+next = ""
+
+[[entry]]
+input = "%"
+output = "％"
+next = ""
+
+[[entry]]
+input = "&"
+output = "＆"
+next = ""
+
+[[entry]]
+input = "'"
+output = "＇"
+next = ""
+
+[[entry]]
+input = "*"
+output = "＊"
+next = ""
+
+[[entry]]
+input = "+"
+output = "＋"
+next = ""
+
+[[entry]]
+input = ":"
+output = "："
+next = ""
+
+[[entry]]
+input = ";"
+output = "；"
+next = ""
+
+[[entry]]
+input = "<"
+output = "＜"
+next = ""
+
+[[entry]]
+input = "="
+output = "＝"
+next = ""
+
+[[entry]]
+input = ">"
+output = "＞"
+next = ""
+
+[[entry]]
+input = "@"
+output = "＠"
+next = ""
+
+[[entry]]
+input = "\\"
+output = "＼"
+next = ""
+
+[[entry]]
+input = "^"
+output = "＾"
+next = ""
+
+[[entry]]
+input = "_"
+output = "＿"
+next = ""
+
+[[entry]]
+input = "`"
+output = "｀"
+next = ""
+
+[[entry]]
+input = "{"
+output = "｛"
+next = ""
+
+[[entry]]
+input = "|"
+output = "｜"
+next = ""
+
+[[entry]]
+input = "}"
+output = "｝"
+next = ""
+
+[[entry]]
+input = "~"
+output = "～"
+next = ""

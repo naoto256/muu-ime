@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  checks:
+    # GitHub macos-15 is the Apple Silicon (M1) runner.
+    runs-on: macos-15
+    env:
+      VECLIB_MAXIMUM_THREADS: "2"
+      CARGO_BUILD_JOBS: "1"
+      RUST_TEST_THREADS: "1"
+      CARGO_PROFILE_RELEASE_STRIP: "false"
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin-audit:2026-08-10 d23441a | v6.1.0
+        with:
+          persist-credentials: false
+          # xcode-ci uses the full commit count for the bundle build number.
+          fetch-depth: 0
+      - uses: dtolnay/rust-toolchain@d86e0fa8f147d6539442c26a61ebba8becc19489 # pin-audit:2026-10-24 d86e0fa | 1.96.0
+        with:
+          components: clippy,rustfmt,rust-docs
+          targets: aarch64-apple-darwin
+      - name: Install build tools
+        run: nice -n 19 python3 scripts/rust_toolchain.py cargo install cbindgen@0.29.4 just@1.59.0 --locked
+      - name: Fetch locked Rust dependencies for offline license checks
+        run: nice -n 19 python3 scripts/rust_toolchain.py cargo fetch --locked --target aarch64-apple-darwin
+      - name: Fetch pinned conversion language models
+        run: |
+          scripts/fetch-conversion-lm.sh --model edge
+          scripts/fetch-conversion-lm.sh --model zenz
+      - name: Fetch pinned public evaluation input
+        run: nice -n 19 just fetch-public-evaluation-data
+      - name: Check and build
+        run: nice -n 19 just ci
+      - name: Verify Apple Silicon artifacts
+        run: |
+          test "$(lipo -archs build/libmuu_ffi.a)" = arm64
+          test "$(lipo -archs build/xcode/Build/Products/Release/MuuIME.app/Contents/MacOS/MuuIME)" = arm64
+      - name: Preserve test evidence
+        if: always()
+        uses: actions/upload-artifact@043fb46d1a93c77aae656e7c1c64a875d1fc6a0a # pin-audit:2026-07-11 043fb46 | v7.0.1
+        with:
+          name: test-evidence
+          path: build/test-evidence/
+          if-no-files-found: ignore

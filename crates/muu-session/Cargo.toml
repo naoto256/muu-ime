@@ -1,0 +1,27 @@
+[package]
+name = "muu-session"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+muu-digest = { path = "../muu-digest" }
+base64 = "0.13"
+# Raw Deflate and CRC only: no ZIP feature bundle, C code or time dependency.
+miniz_oxide = { version = "0.8.9", default-features = false, features = ["with-alloc"] }
+crc32fast = "1.5"
+muu-conversion = { path = "../muu-conversion" }
+muu-dict = { path = "../muu-dict" }
+muu-romaji = { path = "../muu-romaji" }
+muu-lm = { path = "../muu-lm" }
+serde.workspace = true
+serde_json = { workspace = true, features = ["raw_value"] }
+sha2.workspace = true
+toml.workspace = true
+unicode-normalization.workspace = true
+unicode-segmentation.workspace = true
+
+[dev-dependencies]
+insta = { version = "1.43", features = ["json"] }
+tempfile = "3.20"

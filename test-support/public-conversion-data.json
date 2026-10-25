@@ -1,0 +1,10 @@
+{
+  "format_version": 1,
+  "repository": "https://github.com/azooKey/AJIMEE-Bench",
+  "revision": "401666cd56d1a570c2021798b64b6da4396bfd45",
+  "path": "JWTD_v2/v1/evaluation_items.json",
+  "sha256": "e9eb668fd6aa14b1e26436f429b5550108af0a1dfd443b8cea0bcb3ab3028fca",
+  "license": "CC-BY-SA-3.0",
+  "cases": 200,
+  "zenz_correct": 173
+}

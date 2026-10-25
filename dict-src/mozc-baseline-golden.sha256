@@ -1,0 +1,5 @@
+# SHA-256 of schema-v1 view envelope bytes with baseline costs and no-op reranker.
+ab0dca88611c7987a0851500b0071c365dc58d35abf2f27231b991f6b98e42dc	にほんご
+8ec1bdc6fd05dbee090df96f7f282efaea5db4e13065179f005dc1a69b6cdfc8	12345
+20cf110be9b0df189def5c91def29499dabd839522cda2c6de94c64d2a8c9213	カタカナ
+b03f4cd5d006149e85899ce09f2b117a2f084970c3b0ecdcfd98ea56cc74a27e	MuuIME

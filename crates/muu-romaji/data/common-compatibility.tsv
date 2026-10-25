@@ -1,0 +1,138 @@
+# Muu common extended-sound compatibility oracle.
+#
+# These mappings are independently selected by sound family from common
+# Japanese romaji input conventions. Google Mozc's default table at commit
+# 3f235b4eb6fcff7d14ef5f0fb8ee56de7ee4c732 was used as a compatibility
+# cross-check, not copied wholesale. Navigation shortcuts, obsolete kana,
+# vendor-specific spellings, and aliases outside these families are excluded.
+# SPDX-License-Identifier: MIT
+
+# direct foreign sounds
+je	じぇ
+
+# v-family
+va	ゔぁ
+vi	ゔぃ
+ve	ゔぇ
+vo	ゔぉ
+vya	ゔゃ
+vyi	ゔぃ
+vyu	ゔゅ
+vye	ゔぇ
+vyo	ゔょ
+
+# contracted i/e extensions and common aliases
+kyi	きぃ
+kye	きぇ
+gyi	ぎぃ
+gye	ぎぇ
+syi	しぃ
+sye	しぇ
+she	しぇ
+zya	じゃ
+zyi	じぃ
+zyu	じゅ
+zye	じぇ
+zyo	じょ
+tyi	ちぃ
+tye	ちぇ
+che	ちぇ
+cyi	ちぃ
+cye	ちぇ
+dya	ぢゃ
+dyi	ぢぃ
+dyu	ぢゅ
+dye	ぢぇ
+dyo	ぢょ
+nyi	にぃ
+nye	にぇ
+hyi	ひぃ
+hye	ひぇ
+byi	びぃ
+bye	びぇ
+pyi	ぴぃ
+pye	ぴぇ
+myi	みぃ
+mye	みぇ
+ryi	りぃ
+rye	りぇ
+jyi	じぃ
+jye	じぇ
+
+# ts-family
+tsa	つぁ
+tsi	つぃ
+tse	つぇ
+tso	つぉ
+
+# te/de foreign sounds
+tha	てゃ
+thi	てぃ
+thu	てゅ
+the	てぇ
+tho	てょ
+dha	でゃ
+dhi	でぃ
+dhu	でゅ
+dhe	でぇ
+dho	でょ
+twa	とぁ
+twi	とぃ
+twu	とぅ
+twe	とぇ
+two	とぉ
+dwa	どぁ
+dwi	どぃ
+dwu	どぅ
+dwe	どぇ
+dwo	どぉ
+
+# f-family extensions and h-w aliases
+fya	ふゃ
+fyo	ふょ
+hwa	ふぁ
+hwi	ふぃ
+hwe	ふぇ
+hwo	ふぉ
+hwyu	ふゅ
+
+# q/k-w/g-w/s-w/z-w families
+qa	くぁ
+qi	くぃ
+qu	く
+qe	くぇ
+qo	くぉ
+kwa	くぁ
+kwi	くぃ
+kwu	くぅ
+kwe	くぇ
+kwo	くぉ
+gwa	ぐぁ
+gwi	ぐぃ
+gwu	ぐぅ
+gwe	ぐぇ
+gwo	ぐぉ
+swa	すぁ
+swi	すぃ
+swu	すぅ
+swe	すぇ
+swo	すぉ
+zwa	ずぁ
+zwi	ずぃ
+zwu	ずぅ
+zwe	ずぇ
+zwo	ずぉ
+
+# w/y foreign sounds
+ye	いぇ
+wi	うぃ
+we	うぇ
+wha	うぁ
+whi	うぃ
+whu	う
+whe	うぇ
+who	うぉ
+
+# prefix continuity for newly supported q/ch families
+qq	っ	q
+tch	っ	ch

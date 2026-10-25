@@ -1,0 +1,130 @@
+name: Release
+
+# Publishes only from a pushed vX.Y.Z tag; no branch or manual run releases.
+on:
+  push:
+    tags: ['v[0-9]+.[0-9]+.[0-9]+']
+
+permissions:
+  contents: read
+
+jobs:
+  release:
+    # GitHub macos-15 is the Apple Silicon (M1) runner, as in CI.
+    runs-on: macos-15
+    # Only this job may write, and only to create the Release.
+    permissions:
+      contents: write
+    env:
+      VECLIB_MAXIMUM_THREADS: "2"
+      CARGO_BUILD_JOBS: "1"
+      RUST_TEST_THREADS: "1"
+      CARGO_PROFILE_RELEASE_STRIP: "false"
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin-audit:2026-08-10 d23441a | v6.1.0
+        with:
+          persist-credentials: false
+          # The full history gives the bundle build number and the local tag
+          # ref that is compared with HEAD below.
+          fetch-depth: 0
+      # Fail in seconds, before the long build: the ref must be exactly a
+      # vX.Y.Z tag whose commit is HEAD, so the app is built from what was
+      # tagged. The tag name is read from runner variables, never expanded
+      # into the script. The CHANGELOG section for the version becomes the
+      # notes and title; it is written under the ignored build/, so packaging
+      # still sees a clean tree.
+      - name: Verify release tag and extract notes
+        id: notes
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF_NAME#v}"
+          [[ "$GITHUB_REF" == "refs/tags/$GITHUB_REF_NAME" ]] || { echo 'release requires a tag ref' >&2; exit 1; }
+          [[ "$GITHUB_REF_NAME" == "v$version" && "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo 'invalid release tag version' >&2; exit 1; }
+          tag_commit="$(git rev-parse --verify "refs/tags/${GITHUB_REF_NAME}^{commit}")" || exit 1
+          head_commit="$(git rev-parse HEAD)" || exit 1
+          [[ "$tag_commit" == "$head_commit" ]] || { echo 'release tag does not match HEAD' >&2; exit 1; }
+          nice -n 19 python3 .github/scripts/extract-release-notes.py \
+            --version "$version" \
+            --notes-output build/release-notes.md \
+            --github-output "$GITHUB_OUTPUT"
+      - uses: dtolnay/rust-toolchain@d86e0fa8f147d6539442c26a61ebba8becc19489 # pin-audit:2026-10-24 d86e0fa | 1.96.0
+        with:
+          components: clippy,rustfmt,rust-docs
+          targets: aarch64-apple-darwin
+      # Toolchain, tools and offline dependencies are prepared exactly as in CI.
+      - name: Install build tools
+        run: nice -n 19 python3 scripts/rust_toolchain.py cargo install cbindgen@0.29.4 just@1.59.0 --locked
+      - name: Fetch locked Rust dependencies for offline license checks
+        run: nice -n 19 python3 scripts/rust_toolchain.py cargo fetch --locked --target aarch64-apple-darwin
+      # Build the standard app, then require its version to equal the tag and
+      # its linked Rust code to record the tag's commit.
+      - name: Build and verify the tagged standard app
+        run: |
+          set -euo pipefail
+          nice -n 19 just xcode-ci || exit 1
+          app=build/xcode/Build/Products/Release/MuuIME.app
+          version="${GITHUB_REF_NAME#v}"
+          app_version="$(plutil -extract CFBundleShortVersionString raw -o - "$app/Contents/Info.plist")" || exit 1
+          [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]] || { echo 'invalid release tag version' >&2; exit 1; }
+          [[ "$app_version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ && "$app_version" == "$version" ]] || { echo 'app version does not match the release tag' >&2; exit 1; }
+          tag_commit="$(git rev-parse --verify "refs/tags/${GITHUB_REF_NAME}^{commit}")" || exit 1
+          nice -n 19 python3 scripts/verify-rust-source-commit.py "$app" "$tag_commit"
+      # release-package keeps all of its own build, signature, provenance,
+      # bundle, license and ZIP checks. Its printed version, source commit and
+      # output directory must each appear once with the expected value, the
+      # tag must still be HEAD, and the output must be exactly three regular
+      # files, so nothing else can be uploaded.
+      - name: Package and verify release assets
+        run: |
+          set -euo pipefail
+          nice -n 19 just release-package | tee build/release-package.log
+          nice -n 19 python3 - <<'PY'
+          import os
+          from pathlib import Path
+          import subprocess
+
+          tag = os.environ["GITHUB_REF_NAME"]
+          version = tag.removeprefix("v")
+          commit = subprocess.check_output(
+              ["git", "rev-parse", "--verify", f"refs/tags/{tag}^{{commit}}"], text=True
+          ).strip()
+          if commit != subprocess.check_output(["git", "rev-parse", "HEAD"], text=True).strip():
+              raise SystemExit("release tag no longer matches HEAD")
+          assets = Path("build/release") / tag
+          expected = {
+              "version": version,
+              "source_commit": commit,
+              "assets": str(assets.resolve()),
+          }
+          lines = Path("build/release-package.log").read_text().splitlines()
+          for key, value in expected.items():
+              observed = [line.removeprefix(key + ": ") for line in lines if line.startswith(key + ": ")]
+              if observed != [value]:
+                  raise SystemExit(f"unexpected packaged {key}")
+          names = {f"MuuIME-{version}-macos-arm64.zip", "SHA256SUMS", "install.sh"}
+          if {path.name for path in assets.iterdir()} != names:
+              raise SystemExit("release must contain exactly the three packaged assets")
+          if any(path.is_symlink() or not path.is_file() for path in assets.iterdir()):
+              raise SystemExit("release assets must be regular files")
+          PY
+      # GH_TOKEN is explicitly exported only in this last step. --verify-tag stops if the tag
+      # is not on GitHub, and the title arrives through the environment rather
+      # than being expanded into the command line.
+      - name: Publish release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          RELEASE_TITLE: ${{ steps.notes.outputs.title }}
+        run: |
+          set -euo pipefail
+          version="${GITHUB_REF_NAME#v}"
+          assets="build/release/$GITHUB_REF_NAME"
+          gh release create "$GITHUB_REF_NAME" \
+            "$assets/MuuIME-$version-macos-arm64.zip" \
+            "$assets/SHA256SUMS" \
+            "$assets/install.sh" \
+            --verify-tag \
+            --notes-file build/release-notes.md \
+            --title "$RELEASE_TITLE"

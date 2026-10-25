@@ -1,0 +1,81 @@
+name: CodeQL
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  schedule:
+    - cron: "37 3 * * 1"
+
+permissions:
+  security-events: write
+  contents: read
+  actions: read
+
+jobs:
+  analyze:
+    name: Analyze (${{ matrix.language }})
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 45
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - language: actions
+            build-mode: none
+            os: ubuntu-latest
+          - language: rust
+            build-mode: none
+            os: ubuntu-latest
+          - language: python
+            build-mode: none
+            os: ubuntu-latest
+          - language: javascript-typescript
+            build-mode: none
+            os: ubuntu-latest
+          - language: c-cpp
+            build-mode: none
+            os: ubuntu-latest
+          - language: swift
+            build-mode: manual
+            os: macos-15
+    env:
+      VECLIB_MAXIMUM_THREADS: "2"
+      CARGO_BUILD_JOBS: "1"
+      RUST_TEST_THREADS: "1"
+      CARGO_PROFILE_RELEASE_STRIP: "false"
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # pin-audit:2026-08-10 d23441a | v6.1.0
+        with:
+          persist-credentials: false
+          # Xcode build metadata uses the full commit count.
+          fetch-depth: 0
+      - name: Set up Rust for the Swift bridge
+        if: matrix.language == 'swift'
+        uses: dtolnay/rust-toolchain@d86e0fa8f147d6539442c26a61ebba8becc19489 # pin-audit:2026-10-24 d86e0fa | 1.96.0
+        with:
+          components: clippy,rustfmt,rust-docs
+          targets: aarch64-apple-darwin
+      - name: Install build tools
+        if: matrix.language == 'swift'
+        run: nice -n 19 python3 scripts/rust_toolchain.py cargo install cbindgen@0.29.4 just@1.59.0 --locked
+      - name: Fetch locked Rust dependencies
+        if: matrix.language == 'swift'
+        run: nice -n 19 python3 scripts/rust_toolchain.py cargo fetch --locked --target aarch64-apple-darwin
+      - name: Prepare the Swift bridge and dictionary resource
+        if: matrix.language == 'swift'
+        run: nice -n 19 just header rust-arm64 dict-build
+      - name: Initialize CodeQL
+        uses: github/codeql-action/init@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # pin-audit:2026-10-24 9b32540 | v4.39.1
+        with:
+          languages: ${{ matrix.language }}
+          build-mode: ${{ matrix.build-mode }}
+      - name: Build Swift
+        if: matrix.language == 'swift'
+        # Trace one arm64, unsigned Release build using the CI settings.
+        run: nice -n 19 just _xcode-release build standard
+      - name: Analyze CodeQL
+        uses: github/codeql-action/analyze@9b3254085494b55a0f7c4c2b3d2d52cc712ce370 # pin-audit:2026-10-24 9b32540 | v4.39.1
+        with:
+          category: "/language:${{ matrix.language }}"

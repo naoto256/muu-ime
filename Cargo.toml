@@ -1,0 +1,36 @@
+[workspace]
+members = [
+    "crates/muu-conversion",
+    "crates/muu-dict",
+    "crates/muu-dict-cli",
+    "crates/muu-digest",
+    "crates/muu-ffi",
+    "crates/muu-lm",
+    "crates/muu-romaji",
+    "crates/muu-session",
+]
+resolver = "2"
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+rust-version = "1.85"
+
+[workspace.dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+sha2 = "0.10"
+toml = "0.8"
+unicode-normalization = "0.1"
+unicode-segmentation = "1.12"
+yada = "0.7"
+
+[profile.release]
+panic = "unwind"
+lto = "thin"
+
+# The model kernel is plain numeric loops; unoptimized it makes tests that
+# run a conversion through the model take minutes.
+[profile.dev.package.muu-lm]
+opt-level = 3

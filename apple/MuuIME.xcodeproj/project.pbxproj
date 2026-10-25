@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BCF200000000000000000001 /* BuildCapabilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCF200000000000000000002 /* BuildCapabilities.swift */; };
+		C5C500000000000000000001 /* ApplicationLifecycle.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5C500000000000000000002 /* ApplicationLifecycle.swift */; };
+		100000000000000000000001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000001 /* AppDelegate.swift */; };
+		100000000000000000000002 /* InputController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000002 /* InputController.swift */; };
+		110000000000000000000001 /* InputPresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000001 /* InputPresentation.swift */; };
+		100000000000000000000003 /* ProtocolModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000003 /* ProtocolModels.swift */; };
+		100000000000000000000004 /* RustEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000004 /* RustEngine.swift */; };
+		AB6000000000000000000001 /* PersonalFrequencyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6000000000000000000002 /* PersonalFrequencyStore.swift */; };
+		100000000000000000000005 /* InputMethodKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000007 /* InputMethodKit.framework */; };
+		100000000000000000000006 /* Carbon.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000008 /* Carbon.framework */; };
+		1000000000000000000000A0 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2000000000000000000000A0 /* Accelerate.framework */; };
+		100000000000000000000007 /* libmuu_ffi.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 200000000000000000000009 /* libmuu_ffi.a */; };
+		100000000000000000000008 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000B /* main.swift */; };
+		100000000000000000000009 /* mozc-oss.muudict in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000C /* mozc-oss.muudict */; };
+		10000000000000000000000A /* CandidateGeometryPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000D /* CandidateGeometryPolicy.swift */; };
+		10000000000000000000000B /* CandidatePanelController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000E /* CandidatePanelController.swift */; };
+		10000000000000000000000C /* MuuModeHiragana.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000000F /* MuuModeHiragana.tiff */; };
+		10000000000000000000000D /* MuuModeHiraganaSelected.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000010 /* MuuModeHiraganaSelected.tiff */; };
+		100000000000000000000014 /* MuuModeRoman.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000017 /* MuuModeRoman.tiff */; };
+		100000000000000000000015 /* MuuModeRomanSelected.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000018 /* MuuModeRomanSelected.tiff */; };
+		100000000000000000000016 /* MuuModeHiraganaButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000019 /* MuuModeHiraganaButton.tiff */; };
+		10000000000000000000001A /* MuuModeRomanButton.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001D /* MuuModeRomanButton.tiff */; };
+		10000000000000000000001B /* MuuInputMethod.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001E /* MuuInputMethod.tiff */; };
+		10000000000000000000001C /* MuuIME.icns in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000001F /* MuuIME.icns */; };
+		10000000000000000000001D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 400000000000000000000006 /* InfoPlist.strings */; };
+		10000000000000000000001E /* CandidateSurfaceModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000021 /* CandidateSurfaceModels.swift */; };
+		10000000000000000000001F /* CandidateActionPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000022 /* CandidateActionPolicy.swift */; };
+		100000000000000000000020 /* ClientGeometryReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000023 /* ClientGeometryReader.swift */; };
+		100000000000000000000028 /* CommitStreamRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002B /* CommitStreamRecorder.swift */; };
+		B5B500000000000000000001 /* CommitStreamDelivery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B500000000000000000002 /* CommitStreamDelivery.swift */; };
+		B5B500000000000000000003 /* CommitStreamFileWriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5B500000000000000000004 /* CommitStreamFileWriter.swift */; };
+		100000000000000000000029 /* UserDictionaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002C /* UserDictionaryStore.swift */; };
+		10000000000000000000002A /* UserDictionaryWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002D /* UserDictionaryWindowController.swift */; };
+		10000000000000000000002B /* PostalCodeStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002E /* PostalCodeStore.swift */; };
+		10000000000000000000002C /* PostalCodeWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000002F /* PostalCodeWindowController.swift */; };
+		10000000000000000000002D /* postal-code-seed.tsv in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000030 /* postal-code-seed.tsv */; };
+		10000000000000000000002E /* postal-code-seed-manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000031 /* postal-code-seed-manifest.json */; };
+		10000000000000000000002F /* DictionaryDisplayModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000032 /* DictionaryDisplayModels.swift */; };
+		100000000000000000000030 /* ImportedDictionaryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000033 /* ImportedDictionaryStore.swift */; };
+		100000000000000000000031 /* ImportedDictionaryWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000034 /* ImportedDictionaryWindowController.swift */; };
+		100000000000000000000033 /* FileSafety.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000036 /* FileSafety.swift */; };
+		100000000000000000000035 /* DictionaryWindowSupport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200000000000000000000038 /* DictionaryWindowSupport.swift */; };
+		100000000000000000000037 /* ModeBadgeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000003A /* ModeBadgeController.swift */; };
+		100000000000000000000038 /* THIRD_PARTY_LICENSES in Resources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000003B /* THIRD_PARTY_LICENSES */; };
+		10000000000000000000003E /* ClientGeometryBridge.m in Sources */ = {isa = PBXBuildFile; fileRef = 20000000000000000000003E /* ClientGeometryBridge.m */; };
+		110000000000000000000002 /* InputSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000002 /* InputSession.swift */; };
+		110000000000000000000003 /* InputSessionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000003 /* InputSessionCoordinator.swift */; };
+		110000000000000000000004 /* CandidateAttributeGeometry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000004 /* CandidateAttributeGeometry.swift */; };
+		110000000000000000000005 /* CandidatePanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000005 /* CandidatePanelView.swift */; };
+		110000000000000000000006 /* ModeBadgeScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000006 /* ModeBadgeScheduler.swift */; };
+		110000000000000000000007 /* BadgePlacement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000007 /* BadgePlacement.swift */; };
+		110000000000000000000008 /* InputUICleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000008 /* InputUICleanup.swift */; };
+		110000000000000000000009 /* InputMenuActions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 210000000000000000000009 /* InputMenuActions.swift */; };
+		A5A500000000000000000001 /* AboutStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A500000000000000000002 /* AboutStatus.swift */; };
+		A6A600000000000000000001 /* ModelDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A600000000000000000002 /* ModelDownload.swift */; };
+		AB8000000000000000000001 /* ConversionModelProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB8000000000000000000002 /* ConversionModelProfile.swift */; };
+		A6A600000000000000000003 /* AboutPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A6A600000000000000000004 /* AboutPresenter.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BCF200000000000000000002 /* BuildCapabilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuildCapabilities.swift; sourceTree = "<group>"; };
+		C5C500000000000000000002 /* ApplicationLifecycle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationLifecycle.swift; sourceTree = "<group>"; };
+		200000000000000000000001 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		200000000000000000000002 /* InputController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputController.swift; sourceTree = "<group>"; };
+		210000000000000000000001 /* InputPresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputPresentation.swift; sourceTree = "<group>"; };
+		200000000000000000000003 /* ProtocolModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolModels.swift; sourceTree = "<group>"; };
+		200000000000000000000004 /* RustEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustEngine.swift; sourceTree = "<group>"; };
+		AB6000000000000000000002 /* PersonalFrequencyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonalFrequencyStore.swift; sourceTree = "<group>"; };
+		200000000000000000000005 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200000000000000000000006 /* MuuIME-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MuuIME-Bridging-Header.h"; sourceTree = "<group>"; };
+		200000000000000000000007 /* InputMethodKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = InputMethodKit.framework; path = System/Library/Frameworks/InputMethodKit.framework; sourceTree = SDKROOT; };
+		200000000000000000000008 /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
+		2000000000000000000000A0 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		200000000000000000000009 /* libmuu_ffi.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libmuu_ffi.a; path = ../build/libmuu_ffi.a; sourceTree = SOURCE_ROOT; };
+		20000000000000000000000A /* MuuIME.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MuuIME.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		20000000000000000000000B /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		20000000000000000000000C /* mozc-oss.muudict */ = {isa = PBXFileReference; lastKnownFileType = file; name = "mozc-oss.muudict"; path = "../build/mozc-oss.muudict"; sourceTree = SOURCE_ROOT; };
+		20000000000000000000000D /* CandidateGeometryPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateGeometryPolicy.swift; sourceTree = "<group>"; };
+		20000000000000000000000E /* CandidatePanelController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatePanelController.swift; sourceTree = "<group>"; };
+		20000000000000000000000F /* MuuModeHiragana.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuModeHiragana.tiff; sourceTree = "<group>"; };
+		200000000000000000000010 /* MuuModeHiraganaSelected.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuModeHiraganaSelected.tiff; sourceTree = "<group>"; };
+		200000000000000000000017 /* MuuModeRoman.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuModeRoman.tiff; sourceTree = "<group>"; };
+		200000000000000000000018 /* MuuModeRomanSelected.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuModeRomanSelected.tiff; sourceTree = "<group>"; };
+		200000000000000000000019 /* MuuModeHiraganaButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuModeHiraganaButton.tiff; sourceTree = "<group>"; };
+		20000000000000000000001D /* MuuModeRomanButton.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuModeRomanButton.tiff; sourceTree = "<group>"; };
+		20000000000000000000001E /* MuuInputMethod.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; path = MuuInputMethod.tiff; sourceTree = "<group>"; };
+		20000000000000000000001F /* MuuIME.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = MuuIME.icns; sourceTree = "<group>"; };
+		200000000000000000000020 /* ja */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ja; path = ja.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		200000000000000000000021 /* CandidateSurfaceModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateSurfaceModels.swift; sourceTree = "<group>"; };
+		200000000000000000000022 /* CandidateActionPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateActionPolicy.swift; sourceTree = "<group>"; };
+		200000000000000000000023 /* ClientGeometryReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClientGeometryReader.swift; sourceTree = "<group>"; };
+		20000000000000000000002B /* CommitStreamRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitStreamRecorder.swift; sourceTree = "<group>"; };
+		B5B500000000000000000002 /* CommitStreamDelivery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitStreamDelivery.swift; sourceTree = "<group>"; };
+		B5B500000000000000000004 /* CommitStreamFileWriter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitStreamFileWriter.swift; sourceTree = "<group>"; };
+		20000000000000000000002C /* UserDictionaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDictionaryStore.swift; sourceTree = "<group>"; };
+		20000000000000000000002D /* UserDictionaryWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDictionaryWindowController.swift; sourceTree = "<group>"; };
+		20000000000000000000002E /* PostalCodeStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeStore.swift; sourceTree = "<group>"; };
+		20000000000000000000002F /* PostalCodeWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostalCodeWindowController.swift; sourceTree = "<group>"; };
+		200000000000000000000030 /* postal-code-seed.tsv */ = {isa = PBXFileReference; lastKnownFileType = text; path = "postal-code-seed.tsv"; sourceTree = "<group>"; };
+		200000000000000000000031 /* postal-code-seed-manifest.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = "postal-code-seed-manifest.json"; sourceTree = "<group>"; };
+		200000000000000000000032 /* DictionaryDisplayModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryDisplayModels.swift; sourceTree = "<group>"; };
+		200000000000000000000033 /* ImportedDictionaryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedDictionaryStore.swift; sourceTree = "<group>"; };
+		200000000000000000000034 /* ImportedDictionaryWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImportedDictionaryWindowController.swift; sourceTree = "<group>"; };
+		200000000000000000000036 /* FileSafety.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileSafety.swift; sourceTree = "<group>"; };
+		200000000000000000000038 /* DictionaryWindowSupport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DictionaryWindowSupport.swift; sourceTree = "<group>"; };
+		20000000000000000000003A /* ModeBadgeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeBadgeController.swift; sourceTree = "<group>"; };
+		20000000000000000000003B /* THIRD_PARTY_LICENSES */ = {isa = PBXFileReference; lastKnownFileType = folder; name = THIRD_PARTY_LICENSES; path = "../THIRD_PARTY_LICENSES"; sourceTree = SOURCE_ROOT; };
+		20000000000000000000003E /* ClientGeometryBridge.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ClientGeometryBridge.m; sourceTree = "<group>"; };
+		20000000000000000000003F /* ClientGeometryBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClientGeometryBridge.h; sourceTree = "<group>"; };
+		210000000000000000000002 /* InputSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSession.swift; sourceTree = "<group>"; };
+		210000000000000000000003 /* InputSessionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputSessionCoordinator.swift; sourceTree = "<group>"; };
+		210000000000000000000004 /* CandidateAttributeGeometry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidateAttributeGeometry.swift; sourceTree = "<group>"; };
+		210000000000000000000005 /* CandidatePanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandidatePanelView.swift; sourceTree = "<group>"; };
+		210000000000000000000006 /* ModeBadgeScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModeBadgeScheduler.swift; sourceTree = "<group>"; };
+		210000000000000000000007 /* BadgePlacement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgePlacement.swift; sourceTree = "<group>"; };
+		210000000000000000000008 /* InputUICleanup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputUICleanup.swift; sourceTree = "<group>"; };
+		210000000000000000000009 /* InputMenuActions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputMenuActions.swift; sourceTree = "<group>"; };
+		A5A500000000000000000002 /* AboutStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutStatus.swift; sourceTree = "<group>"; };
+		A6A600000000000000000002 /* ModelDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelDownload.swift; sourceTree = "<group>"; };
+		AB8000000000000000000002 /* ConversionModelProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversionModelProfile.swift; sourceTree = "<group>"; };
+		A6A600000000000000000004 /* AboutPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPresenter.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300000000000000000000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000005 /* InputMethodKit.framework in Frameworks */,
+				100000000000000000000006 /* Carbon.framework in Frameworks */,
+				1000000000000000000000A0 /* Accelerate.framework in Frameworks */,
+				100000000000000000000007 /* libmuu_ffi.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		400000000000000000000001 = {
+			isa = PBXGroup;
+			children = (
+				400000000000000000000002 /* MuuIME */,
+				400000000000000000000003 /* Frameworks */,
+				400000000000000000000004 /* Products */,
+				20000000000000000000000C /* mozc-oss.muudict */,
+				20000000000000000000003B /* THIRD_PARTY_LICENSES */,
+			);
+			sourceTree = "<group>";
+		};
+		400000000000000000000002 /* MuuIME */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000B /* main.swift */,
+				200000000000000000000001 /* AppDelegate.swift */,
+				A5A500000000000000000002 /* AboutStatus.swift */,
+				A6A600000000000000000004 /* AboutPresenter.swift */,
+				A6A600000000000000000002 /* ModelDownload.swift */,
+				AB8000000000000000000002 /* ConversionModelProfile.swift */,
+				C5C500000000000000000002 /* ApplicationLifecycle.swift */,
+				200000000000000000000002 /* InputController.swift */,
+				210000000000000000000001 /* InputPresentation.swift */,
+				210000000000000000000009 /* InputMenuActions.swift */,
+				210000000000000000000008 /* InputUICleanup.swift */,
+				210000000000000000000007 /* BadgePlacement.swift */,
+				210000000000000000000006 /* ModeBadgeScheduler.swift */,
+				210000000000000000000005 /* CandidatePanelView.swift */,
+				210000000000000000000004 /* CandidateAttributeGeometry.swift */,
+				210000000000000000000003 /* InputSessionCoordinator.swift */,
+				210000000000000000000002 /* InputSession.swift */,
+				200000000000000000000021 /* CandidateSurfaceModels.swift */,
+				200000000000000000000022 /* CandidateActionPolicy.swift */,
+				20000000000000000000000D /* CandidateGeometryPolicy.swift */,
+				200000000000000000000023 /* ClientGeometryReader.swift */,
+				20000000000000000000003F /* ClientGeometryBridge.h */,
+				20000000000000000000003E /* ClientGeometryBridge.m */,
+				20000000000000000000000E /* CandidatePanelController.swift */,
+				20000000000000000000003A /* ModeBadgeController.swift */,
+				200000000000000000000003 /* ProtocolModels.swift */,
+				200000000000000000000004 /* RustEngine.swift */,
+				AB6000000000000000000002 /* PersonalFrequencyStore.swift */,
+				200000000000000000000036 /* FileSafety.swift */,
+				200000000000000000000038 /* DictionaryWindowSupport.swift */,
+				20000000000000000000002C /* UserDictionaryStore.swift */,
+				20000000000000000000002D /* UserDictionaryWindowController.swift */,
+				20000000000000000000002E /* PostalCodeStore.swift */,
+				20000000000000000000002F /* PostalCodeWindowController.swift */,
+				200000000000000000000032 /* DictionaryDisplayModels.swift */,
+				200000000000000000000033 /* ImportedDictionaryStore.swift */,
+				200000000000000000000034 /* ImportedDictionaryWindowController.swift */,
+				20000000000000000000002B /* CommitStreamRecorder.swift */,
+				BCF200000000000000000002 /* BuildCapabilities.swift */,
+				B5B500000000000000000002 /* CommitStreamDelivery.swift */,
+				B5B500000000000000000004 /* CommitStreamFileWriter.swift */,
+				400000000000000000000008 /* PostalCodeSeed */,
+				400000000000000000000005 /* ModeIcons */,
+				400000000000000000000006 /* InfoPlist.strings */,
+				200000000000000000000005 /* Info.plist */,
+				200000000000000000000006 /* MuuIME-Bridging-Header.h */,
+			);
+			path = MuuIME;
+			sourceTree = "<group>";
+		};
+		400000000000000000000005 /* ModeIcons */ = {
+			isa = PBXGroup;
+			children = (
+				20000000000000000000000F /* MuuModeHiragana.tiff */,
+				200000000000000000000010 /* MuuModeHiraganaSelected.tiff */,
+				200000000000000000000019 /* MuuModeHiraganaButton.tiff */,
+				200000000000000000000017 /* MuuModeRoman.tiff */,
+				200000000000000000000018 /* MuuModeRomanSelected.tiff */,
+				20000000000000000000001D /* MuuModeRomanButton.tiff */,
+				20000000000000000000001E /* MuuInputMethod.tiff */,
+				20000000000000000000001F /* MuuIME.icns */,
+			);
+			path = ModeIcons;
+			sourceTree = "<group>";
+		};
+		400000000000000000000008 /* PostalCodeSeed */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000030 /* postal-code-seed.tsv */,
+				200000000000000000000031 /* postal-code-seed-manifest.json */,
+			);
+			path = PostalCodeSeed;
+			sourceTree = "<group>";
+		};
+		400000000000000000000003 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				200000000000000000000007 /* InputMethodKit.framework */,
+				200000000000000000000008 /* Carbon.framework */,
+				2000000000000000000000A0 /* Accelerate.framework */,
+				200000000000000000000009 /* libmuu_ffi.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		400000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (20000000000000000000000A /* MuuIME.app */);
+			name = Products;
+			sourceTree = "<group>";
+	};
+/* End PBXGroup section */
+
+/* Begin PBXVariantGroup section */
+		400000000000000000000006 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				200000000000000000000020 /* ja */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin PBXNativeTarget section */
+		500000000000000000000001 /* MuuIME */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 900000000000000000000002 /* Build configuration list for PBXNativeTarget "MuuIME" */;
+			buildPhases = (
+				700000000000000000000001 /* Sources */,
+				300000000000000000000001 /* Frameworks */,
+				700000000000000000000002 /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = MuuIME;
+			productName = MuuIME;
+			productReference = 20000000000000000000000A /* MuuIME.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		600000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2630;
+			};
+			buildConfigurationList = 900000000000000000000001 /* Build configuration list for PBXProject "MuuIME" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = ja;
+			hasScannedForEncodings = 0;
+			knownRegions = (ja, Base);
+			mainGroup = 400000000000000000000001;
+			productRefGroup = 400000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (500000000000000000000001 /* MuuIME */);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		700000000000000000000002 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000009 /* mozc-oss.muudict in Resources */,
+				10000000000000000000000C /* MuuModeHiragana.tiff in Resources */,
+				10000000000000000000000D /* MuuModeHiraganaSelected.tiff in Resources */,
+				100000000000000000000016 /* MuuModeHiraganaButton.tiff in Resources */,
+				100000000000000000000014 /* MuuModeRoman.tiff in Resources */,
+				100000000000000000000015 /* MuuModeRomanSelected.tiff in Resources */,
+				10000000000000000000001A /* MuuModeRomanButton.tiff in Resources */,
+				10000000000000000000001B /* MuuInputMethod.tiff in Resources */,
+				10000000000000000000001C /* MuuIME.icns in Resources */,
+				10000000000000000000001D /* InfoPlist.strings in Resources */,
+				10000000000000000000002D /* postal-code-seed.tsv in Resources */,
+				10000000000000000000002E /* postal-code-seed-manifest.json in Resources */,
+				100000000000000000000038 /* THIRD_PARTY_LICENSES in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		700000000000000000000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				100000000000000000000008 /* main.swift in Sources */,
+				100000000000000000000001 /* AppDelegate.swift in Sources */,
+				A5A500000000000000000001 /* AboutStatus.swift in Sources */,
+				A6A600000000000000000003 /* AboutPresenter.swift in Sources */,
+				A6A600000000000000000001 /* ModelDownload.swift in Sources */,
+				AB8000000000000000000001 /* ConversionModelProfile.swift in Sources */,
+				C5C500000000000000000001 /* ApplicationLifecycle.swift in Sources */,
+				100000000000000000000002 /* InputController.swift in Sources */,
+				110000000000000000000001 /* InputPresentation.swift in Sources */,
+				110000000000000000000009 /* InputMenuActions.swift in Sources */,
+				110000000000000000000008 /* InputUICleanup.swift in Sources */,
+				110000000000000000000007 /* BadgePlacement.swift in Sources */,
+				110000000000000000000006 /* ModeBadgeScheduler.swift in Sources */,
+				110000000000000000000005 /* CandidatePanelView.swift in Sources */,
+				110000000000000000000004 /* CandidateAttributeGeometry.swift in Sources */,
+				110000000000000000000003 /* InputSessionCoordinator.swift in Sources */,
+				110000000000000000000002 /* InputSession.swift in Sources */,
+				10000000000000000000001E /* CandidateSurfaceModels.swift in Sources */,
+				10000000000000000000001F /* CandidateActionPolicy.swift in Sources */,
+				10000000000000000000000A /* CandidateGeometryPolicy.swift in Sources */,
+				100000000000000000000020 /* ClientGeometryReader.swift in Sources */,
+				10000000000000000000003E /* ClientGeometryBridge.m in Sources */,
+				10000000000000000000000B /* CandidatePanelController.swift in Sources */,
+				100000000000000000000037 /* ModeBadgeController.swift in Sources */,
+				100000000000000000000003 /* ProtocolModels.swift in Sources */,
+				100000000000000000000004 /* RustEngine.swift in Sources */,
+				AB6000000000000000000001 /* PersonalFrequencyStore.swift in Sources */,
+				100000000000000000000033 /* FileSafety.swift in Sources */,
+				100000000000000000000035 /* DictionaryWindowSupport.swift in Sources */,
+				100000000000000000000029 /* UserDictionaryStore.swift in Sources */,
+				10000000000000000000002A /* UserDictionaryWindowController.swift in Sources */,
+				10000000000000000000002B /* PostalCodeStore.swift in Sources */,
+				10000000000000000000002C /* PostalCodeWindowController.swift in Sources */,
+				10000000000000000000002F /* DictionaryDisplayModels.swift in Sources */,
+				100000000000000000000030 /* ImportedDictionaryStore.swift in Sources */,
+				100000000000000000000031 /* ImportedDictionaryWindowController.swift in Sources */,
+				100000000000000000000028 /* CommitStreamRecorder.swift in Sources */,
+				BCF200000000000000000001 /* BuildCapabilities.swift in Sources */,
+				B5B500000000000000000001 /* CommitStreamDelivery.swift in Sources */,
+				B5B500000000000000000003 /* CommitStreamFileWriter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		800000000000000000000001 /* Debug */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 15.0; SDKROOT = macosx; }; name = Debug; };
+		800000000000000000000002 /* Release */ = {isa = XCBuildConfiguration; buildSettings = {CLANG_ENABLE_MODULES = YES; MACOSX_DEPLOYMENT_TARGET = 15.0; SDKROOT = macosx; }; name = Release; };
+		800000000000000000000003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+				INFOPLIST_FILE = MuuIME/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../build";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				MUU_SOURCE_COMMIT = unknown;
+				MUU_BUILD_VARIANT = standard;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.muu.inputmethod.Muu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MuuIME/MuuIME-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		800000000000000000000004 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = arm64;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../include";
+				INFOPLIST_FILE = MuuIME/Info.plist;
+				LIBRARY_SEARCH_PATHS = "$(SRCROOT)/../build";
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 0.1.0;
+				MUU_SOURCE_COMMIT = unknown;
+				MUU_BUILD_VARIANT = standard;
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.muu.inputmethod.Muu;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = "MuuIME/MuuIME-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		900000000000000000000001 /* Build configuration list for PBXProject "MuuIME" */ = {isa = XCConfigurationList; buildConfigurations = (800000000000000000000001, 800000000000000000000002); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+		900000000000000000000002 /* Build configuration list for PBXNativeTarget "MuuIME" */ = {isa = XCConfigurationList; buildConfigurations = (800000000000000000000003, 800000000000000000000004); defaultConfigurationIsVisible = 0; defaultConfigurationName = Release; };
+/* End XCConfigurationList section */
+	};
+	rootObject = 600000000000000000000001 /* Project object */;
+}

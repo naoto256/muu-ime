@@ -1,0 +1,7 @@
+[book]
+title = "Muu IME"
+description = "macOS の日本語入力メソッド Muu IME のドキュメント"
+language = "ja"
+
+[output.html]
+git-repository-url = "https://github.com/naoto256/muu-ime"

@@ -1,0 +1,98 @@
+Muu IME third-party notices
+===========================
+
+Muu IME includes system dictionary data derived from the open-source Mozc
+dictionary at:
+
+  https://github.com/google/mozc
+  commit 3f235b4eb6fcff7d14ef5f0fb8ee56de7ee4c732
+
+The dictionary contains material from Google Inc., IPAdic from the Nara
+Institute of Science and Technology, ICOT Free Software, and the Okinawa
+Dictionary. The applicable copyright notices, redistribution conditions, and
+no-warranty text are reproduced verbatim in:
+
+  dictionaries/mozc/LICENSE.txt
+  dictionaries/mozc/README.txt
+
+This is factual attribution only. Google, Mozc, NAIST, ICOT, and the other
+contributors do not endorse Muu IME.
+
+Supplemental emoticon and single-kanji candidates also use Mozc data at the
+same pinned commit (src/data/emoticon and src/data/single_kanji). These tables
+are distributed under Mozc's Google BSD terms in dictionaries/mozc/LICENSE.txt.
+Their source hashes and canonical transform are recorded separately in
+crates/muu-session/data/auxiliary-provenance.toml; they are not model data.
+
+Supplemental emoji characters and reading aliases use Mozc's pinned generated
+emoji_data.tsv, including CLDR-derived annotations. The Mozc update identifies
+CLDR 48 / Emoji 17.0; the exact input XML snapshot has not been established.
+Mozc's BSD terms and the Unicode License V3 (Unicode-3.0) apply. The latter's
+copyright and permission notice, plus the scope of this provenance, are in:
+
+  data/cldr/LICENSE.txt
+  data/cldr/README.txt
+
+These are character strings only; Muu IME does not distribute emoji fonts or
+images. Unicode and the upstream contributors do not endorse Muu IME.
+
+Muu IME also includes a generated lexical supplement derived from
+SudachiDict-core 20260723, distributed by Works Applications. The source data
+contains material attributed to UniDic, mecab-unidic-NEologd, Hatena, Japan
+Post, Japanese station-name data, and personal-name data. The applicable
+license and complete upstream legal notices are reproduced in:
+
+  dictionaries/sudachidict/LICENSE-2.0.txt
+  dictionaries/sudachidict/LEGAL.txt
+
+This is factual attribution only. Works Applications and the upstream data
+contributors do not endorse Muu IME.
+
+Muu IME's Cargo runtime code dependencies, pinned versions, selected licenses
+and original-file checksums are recorded in code_deps/manifest.json. Their
+license texts and additional copyright notices are reproduced under the
+versioned code_deps/ directories. Copyright notices in source headers are
+preserved separately in code_deps/SOURCE-NOTICES.txt. Build-only, development
+and procedural-macro host dependencies are outside this runtime inventory.
+
+Rust 1.96.0 standard-library code is inventoried separately under rust/.
+Its manifest records the aarch64 macOS sysroot components, source hashes,
+selected licenses and additional notices, including Unicode and the
+compiler_builtins / compiler-rt / libm terms. The unmodified upstream
+COPYRIGHT-library.html covers multiple platforms; the target-specific scope
+is explained in rust/1.96.0/NOTICE.txt. It is not an assertion that every
+package in the upstream report is included in this application.
+
+Postal ZIP decoding uses miniz_oxide 0.8.9 (raw Deflate), crc32fast 1.5.2
+(CRC32), and miniz_oxide's adler2 2.0.1 dependency. We select the MIT license
+option for each. Copyright notices and permission texts are reproduced in:
+
+  code_deps/miniz_oxide-0.8.9/LICENSE-MIT.md
+  code_deps/crc32fast-1.5.2/LICENSE-MIT
+  code_deps/adler2-2.0.1/LICENSE-MIT
+
+Only miniz_oxide's with-alloc feature is enabled. These libraries contain no
+C backend, ZIP feature bundle, or time dependency. See Cargo.lock for versions.
+
+Optional conversion model kanakanji-edge-33m is attributed separately in:
+
+  models/kanakanji-edge-33m/NOTICE.txt
+
+The model weights are Apache-2.0; the inherited tokenizer is CC BY-SA 4.0,
+and its training-data sources include both CC BY-SA 4.0 and ODC-BY. These
+licenses describe different artifacts and must not be conflated. The weights,
+tokenizer and datasets are not bundled. See that notice for upstream sources.
+
+Optional conversion model zenz-v3.2-small and the MIT notice for the GGUF
+unpacking / byte-BPE algorithms are recorded separately in:
+
+  models/zenz-v3.2-small/NOTICE.txt
+
+The pinned model card declares Apache-2.0 for zenz; Muu IME follows those
+published terms, with upstream lineage the zenz publisher's responsibility.
+The tokenizer vocabulary and merges originate from
+ku-nlp/gpt2-small-japanese-char (revision
+f1623eb5e26cee239d8fc5a661c48482811b3dbb), licensed under CC BY-SA 4.0.
+The model is not bundled; users explicitly download it through About.
+No llama.cpp C dependency is used. See the dedicated notice for the pinned
+acquisition source, revision, file name and SHA-256.

@@ -1,0 +1,248 @@
+[
+  {
+    "id": "language",
+    "romaji": "nihongo",
+    "edge": {
+      "caret_utf16": 3,
+      "commit": "日本語",
+      "first_candidate": "日本語",
+      "runs": [
+        {
+          "is_converted": true,
+          "is_focused": true,
+          "text": "日本語",
+          "underline_style": "thick",
+          "utf16_len": 3,
+          "utf16_start": 0
+        }
+      ],
+      "segments": [
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 4,
+            "start": 0
+          }
+        }
+      ],
+      "selected_candidate": "日本語",
+      "selection": null,
+      "switched_runs": [
+        false
+      ]
+    },
+    "zenz": {
+      "caret_utf16": 3,
+      "commit": "日本語",
+      "first_candidate": "日本語",
+      "runs": [
+        {
+          "is_converted": true,
+          "is_focused": true,
+          "text": "日本語",
+          "underline_style": "thick",
+          "utf16_len": 3,
+          "utf16_start": 0
+        }
+      ],
+      "segments": [
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 4,
+            "start": 0
+          }
+        }
+      ],
+      "selected_candidate": "日本語",
+      "selection": null,
+      "switched_runs": [
+        false
+      ]
+    }
+  },
+  {
+    "id": "compound",
+    "romaji": "kouendeasobimasu",
+    "edge": {
+      "caret_utf16": 3,
+      "commit": "公園で遊びます",
+      "first_candidate": "公園で",
+      "runs": [
+        {
+          "is_converted": true,
+          "is_focused": true,
+          "text": "公園で",
+          "underline_style": "thick",
+          "utf16_len": 3,
+          "utf16_start": 0
+        },
+        {
+          "is_converted": true,
+          "is_focused": false,
+          "text": "遊びます",
+          "underline_style": "single",
+          "utf16_len": 4,
+          "utf16_start": 3
+        }
+      ],
+      "segments": [
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 5,
+            "start": 0
+          }
+        },
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 5,
+            "start": 5
+          }
+        }
+      ],
+      "selected_candidate": "公園で",
+      "selection": null,
+      "switched_runs": [
+        false
+      ]
+    },
+    "zenz": {
+      "caret_utf16": 3,
+      "commit": "公園で遊びます",
+      "first_candidate": "公園で",
+      "runs": [
+        {
+          "is_converted": true,
+          "is_focused": true,
+          "text": "公園で",
+          "underline_style": "thick",
+          "utf16_len": 3,
+          "utf16_start": 0
+        },
+        {
+          "is_converted": true,
+          "is_focused": false,
+          "text": "遊びます",
+          "underline_style": "single",
+          "utf16_len": 4,
+          "utf16_start": 3
+        }
+      ],
+      "segments": [
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 5,
+            "start": 0
+          }
+        },
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 5,
+            "start": 5
+          }
+        }
+      ],
+      "selected_candidate": "公園で",
+      "selection": null,
+      "switched_runs": [
+        false
+      ]
+    }
+  },
+  {
+    "id": "ambiguous",
+    "romaji": "jikanwohakaru",
+    "edge": {
+      "caret_utf16": 3,
+      "commit": "時間を計る",
+      "first_candidate": "時間を",
+      "runs": [
+        {
+          "is_converted": true,
+          "is_focused": true,
+          "text": "時間を",
+          "underline_style": "thick",
+          "utf16_len": 3,
+          "utf16_start": 0
+        },
+        {
+          "is_converted": true,
+          "is_focused": false,
+          "text": "計る",
+          "underline_style": "single",
+          "utf16_len": 2,
+          "utf16_start": 3
+        }
+      ],
+      "segments": [
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 4,
+            "start": 0
+          }
+        },
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 3,
+            "start": 4
+          }
+        }
+      ],
+      "selected_candidate": "時間を",
+      "selection": null,
+      "switched_runs": [
+        true
+      ]
+    },
+    "zenz": {
+      "caret_utf16": 3,
+      "commit": "時間を計る",
+      "first_candidate": "時間を",
+      "runs": [
+        {
+          "is_converted": true,
+          "is_focused": true,
+          "text": "時間を",
+          "underline_style": "thick",
+          "utf16_len": 3,
+          "utf16_start": 0
+        },
+        {
+          "is_converted": true,
+          "is_focused": false,
+          "text": "計る",
+          "underline_style": "single",
+          "utf16_len": 2,
+          "utf16_start": 3
+        }
+      ],
+      "segments": [
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 4,
+            "start": 0
+          }
+        },
+        {
+          "candidate_focus": 0,
+          "reading_range": {
+            "len": 3,
+            "start": 4
+          }
+        }
+      ],
+      "selected_candidate": "時間を",
+      "selection": null,
+      "switched_runs": [
+        true
+      ]
+    }
+  }
+]

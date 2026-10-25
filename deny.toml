@@ -1,0 +1,19 @@
+[advisories]
+ignore = [
+    { id = "RUSTSEC-2024-0436", reason = "paste 1.0.15 is an unmaintained proc-macro used only at build time through tokenizers 0.21.4. No fixed version is available; removing it requires an upstream replacement." },
+]
+
+[licenses]
+# Keep runtime license choices aligned with THIRD_PARTY_LICENSES/code_deps/manifest.json.
+# unicode-ident additionally requires Unicode-3.0 in the build dependency graph.
+allow = ["MIT", "Apache-2.0", "Unicode-3.0"]
+
+[bans]
+# Multiple proc-macro dependency versions are reviewed without blocking builds.
+multiple-versions = "warn"
+
+[sources]
+unknown-registry = "deny"
+unknown-git = "deny"
+allow-registry = ["https://github.com/rust-lang/crates.io-index"]
+allow-git = []

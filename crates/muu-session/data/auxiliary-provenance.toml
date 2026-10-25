@@ -1,0 +1,29 @@
+schema_version = 1
+transform_version = 1
+mozc_commit = "3f235b4eb6fcff7d14ef5f0fb8ee56de7ee4c732"
+# Runtime canonical indexing: exact NFC surfaces/readings (including alias
+# case/width), first surface identity, per-reading source priority, duplicate pairs
+# removed. The canonical digest is recorded alongside this source digest.
+
+[[sources]]
+kind = "emoticon"
+path = "third_party/mozc-oss/src/data/emoticon/emoticon.tsv"
+sha256 = "366558b380bef07dda26822c9100d1efabee539f7961b2c6363d4614c4a762c4"
+license = "BSD-3-Clause"
+
+[[sources]]
+kind = "emoji"
+path = "third_party/mozc-oss/src/data/emoji/emoji_data.tsv"
+sha256 = "91e8d93f5e71b7fd821b30c8d72a7f5f22214fab5d8157d009600b304fe0cf08"
+license = "BSD-3-Clause AND Unicode-3.0"
+mozc_data_update_commit = "4517e51d53063397222adb5512c7ad972b17c181"
+# The upstream update identifies CLDR 48 / Emoji 17.0. Its exact XML input
+# snapshot is unverified (the update preceded the final CLDR 48 release).
+cldr_license_commit = "acd6d88ae493633240e19a87a721076a8a75c310"
+cldr_license_git_blob = "861b74f3c812088755fd185d964e82a244503bbd"
+
+[[sources]]
+kind = "single_kanji"
+path = "third_party/mozc-oss/src/data/single_kanji/single_kanji.tsv"
+sha256 = "bfa6a4be1319a144f770ba281dfc04091a05320e334357f949b293dc5f9c3d0c"
+license = "BSD-3-Clause"

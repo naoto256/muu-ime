@@ -1,0 +1,11 @@
+{
+  "csv_sha256" : "d35fc79fa9c5a0555cd616539b7c27200a71988601d84a75e86a336fe0be1883",
+  "entry_count" : 124512,
+  "retrieved_at" : "2026-07-31T07:59:02Z",
+  "schema_version" : 1,
+  "snapshot_sha256" : "6752f105b4d6654021910c25e24f5aa2c143b5f204835b4b69fab0e11428f469",
+  "source_last_modified" : "Fri, 31 Jul 2026 07:59:02 GMT",
+  "source_page_url" : "https://www.post.japanpost.jp/service/search/zipcode/download/utf-zip.html",
+  "source_url" : "https://www.post.japanpost.jp/service/search/zipcode/download/utf/zip/utf_ken_all.zip",
+  "zip_sha256" : "0b52620fb659846e1893416b333e23154243060325ff1d3d3747b221b915a19d"
+}

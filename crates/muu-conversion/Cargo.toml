@@ -1,0 +1,24 @@
+[package]
+name = "muu-conversion"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[dependencies]
+muu-digest = { path = "../muu-digest" }
+muu-dict = { path = "../muu-dict" }
+serde.workspace = true
+unicode-normalization.workspace = true
+unicode-segmentation.workspace = true
+
+[dev-dependencies]
+proptest = "1.7"
+tempfile = "3.20"
+
+[build-dependencies]
+muu-dict = { path = "../muu-dict" }
+
+[[bench]]
+name = "conversion_latency"
+harness = false

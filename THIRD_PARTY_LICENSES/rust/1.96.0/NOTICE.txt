@@ -1,0 +1,118 @@
+Rust standard library notices
+=============================
+
+Toolchain: 1.96.0
+Target: aarch64-apple-darwin
+Rust source commit: ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96
+
+Scope:
+- The 19 sysroot rlibs are matched to a release muu-ffi staticlib before final linking. LTO/dead stripping is not used to omit notices.
+- All 144 non-Rust object members in that staticlib are present in compiler_builtins, including the aarch64 LSE assembly variants.
+- COPYRIGHT-library.html is the complete, unmodified upstream source report for all platforms; it is provenance, not a list of components in this macOS app.
+- Fuchsia, vex-sdk, WASI, Windows, SGX, dlmalloc and test/build-only cc/shlex/rand packages in that report are outside this target scope.
+- hashbrown disables default features; its optional foldhash default-hasher is not enabled by std. Unwind uses the macOS system unwinder, not a bundled libunwind.
+- The fixed library/Cargo.lock and the actual rlib inventory identify ten registry packages. Five (addr2line/adler2/memchr/miniz_oxide/object) are not separately listed in COPYRIGHT-library.html; their public archive license originals supplement that report.
+- compiler_builtins has MIT AND Apache-2.0 WITH LLVM-exception AND (MIT OR Apache-2.0) terms; its complete original, compiler-rt license/credits and bundled libm notice are preserved. It is not classified as MIT-only.
+- Compiler-rt and libm full notices include historical/conditional license text; inclusion preserves upstream wording without claiming every described implementation is linked.
+
+Sysroot components included in the release staticlib:
+- addr2line 0.25.1: MIT
+- adler2 2.0.1: MIT
+- alloc 0.0.0: MIT
+- cfg_if 1.0.4: MIT
+- compiler_builtins 0.1.160: MIT AND Apache-2.0 WITH LLVM-exception
+- core 0.0.0: MIT AND Unicode-3.0
+- gimli 0.32.3: MIT
+- hashbrown 0.16.1: MIT
+- libc 0.2.183: MIT
+- memchr 2.7.6: MIT
+- miniz_oxide 0.8.9: MIT
+- object 0.37.3: MIT
+- panic_unwind 0.0.0: MIT
+- rustc_demangle 0.1.27: MIT
+- rustc_std_workspace_alloc 1.99.0: MIT
+- rustc_std_workspace_core 1.99.0: MIT
+- std 0.0.0: MIT
+- std_detect 0.1.5: MIT
+- unwind 0.0.0: MIT
+
+In-tree copyright notices from COPYRIGHT-library.html:
+(The upstream report remains unmodified alongside these notices.)
+
+.: Apache-2.0 OR MIT
+Selected: MIT
+Copyright: The Rust Project Developers (see https://thanks.rust-lang.org)
+
+library/backtrace: Apache-2.0 OR MIT
+Selected: MIT
+Copyright: 2014 Alex Crichton
+Copyright: The Rust Project Developers (see https://thanks.rust-lang.org)
+
+library/core/src/unicode/unicode_data.rs: Unicode-3.0
+Selected: Unicode-3.0
+Copyright: 1991-2024 Unicode, Inc
+
+library/std/src/sync/mpmc: Apache-2.0 OR MIT
+Selected: MIT
+Copyright: 2019 The Crossbeam Project Developers
+Copyright: The Rust Project Developers (see https://thanks.rust-lang.org)
+
+Additional original source copyright headers:
+gimli-0.32.3, src/constants.rs:4
+// Copyright 2016 The rust-dwarf Developers
+
+Original license files and sources (SHA-256 values are in manifest.json):
+
+1.96.0/COPYRIGHT-library.html
+Rust toolchain: share/doc/rust/COPYRIGHT-library.html
+
+1.96.0/LICENSE-MIT
+https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/LICENSE-MIT
+
+1.96.0/compiler-builtins/LICENSE.txt
+https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library/compiler-builtins/LICENSE.txt
+
+1.96.0/compiler-builtins/libm-LICENSE.txt
+https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library/compiler-builtins/libm/LICENSE.txt
+
+1.96.0/compiler-rt/CREDITS.TXT
+https://github.com/rust-lang/llvm-project/blob/1cb4e3833c1919c2e6fb579a23ac0e2b22587b7e/compiler-rt/CREDITS.TXT
+
+1.96.0/compiler-rt/LICENSE.TXT
+https://github.com/rust-lang/llvm-project/blob/1cb4e3833c1919c2e6fb579a23ac0e2b22587b7e/compiler-rt/LICENSE.TXT
+
+1.96.0/crates/addr2line-0.25.1/LICENSE-MIT
+https://static.crates.io/crates/addr2line/addr2line-0.25.1.crate
+
+1.96.0/crates/adler2-2.0.1/LICENSE-MIT
+https://static.crates.io/crates/adler2/adler2-2.0.1.crate
+
+1.96.0/crates/cfg-if-1.0.4/LICENSE-MIT
+https://static.crates.io/crates/cfg-if/cfg-if-1.0.4.crate
+
+1.96.0/crates/gimli-0.32.3/LICENSE-MIT
+https://static.crates.io/crates/gimli/gimli-0.32.3.crate
+
+1.96.0/crates/hashbrown-0.16.1/LICENSE-MIT
+https://static.crates.io/crates/hashbrown/hashbrown-0.16.1.crate
+
+1.96.0/crates/libc-0.2.183/LICENSE-MIT
+https://static.crates.io/crates/libc/libc-0.2.183.crate
+
+1.96.0/crates/memchr-2.7.6/LICENSE-MIT
+https://static.crates.io/crates/memchr/memchr-2.7.6.crate
+
+1.96.0/crates/miniz_oxide-0.8.9/LICENSE-MIT.md
+https://static.crates.io/crates/miniz_oxide/miniz_oxide-0.8.9.crate
+
+1.96.0/crates/object-0.37.3/LICENSE-MIT
+https://static.crates.io/crates/object/object-0.37.3.crate
+
+1.96.0/crates/rustc-demangle-0.1.27/LICENSE-MIT
+https://static.crates.io/crates/rustc-demangle/rustc-demangle-0.1.27.crate
+
+1.96.0/licenses/Unicode-3.0.txt
+Rust toolchain: share/doc/rust/licenses/Unicode-3.0.txt
+
+1.96.0/stdarch/LICENSE-MIT
+https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library/stdarch/LICENSE-MIT

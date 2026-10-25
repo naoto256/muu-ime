@@ -1,0 +1,10 @@
+# id	split	reading_segments	expected_segments	tags	provenance
+kisha-001	probe	きしゃの|きしゃが|きしゃで|きしゃ|した	貴社の|記者が|汽車で|帰社|した	repeated-homophone;particle-context;case-frame	self-authored-accepted
+kisha-002	dev	きしゃは|きしゃで|きしゃ|した	記者は|汽車で|帰社|した	homophone;particle-context;case-frame	self-authored
+kisha-003	dev	きしゃの|きしゃは|きしゃを|しゅざい|した	貴社の|記者は|汽車を|取材|した	repeated-homophone;particle-context;case-frame	self-authored
+kisha-004	dev	きしゃは|きしゃを|しゅざい|した	記者は|汽車を|取材|した	homophone;particle-context;case-frame	self-authored
+kisha-005	dev	きしゃが|えきに|ついた	汽車が|駅に|着いた	homophone;subject-predicate	self-authored
+kisha-006	dev	きしゃが|きじを|かいた	記者が|記事を|書いた	homophone;subject-object-predicate	self-authored
+kisha-007	dev	きしゃの|しゃいん	貴社の|社員	homophone;possessive-relation	self-authored
+kisha-008	dev	きしゃに|のって|きしゃ|した	汽車に|乗って|帰社|した	repeated-homophone;argument-structure	self-authored
+kisha-009	dev	きしゃが|きしゃ|した	記者が|帰社|した	repeated-homophone;subject-predicate	self-authored

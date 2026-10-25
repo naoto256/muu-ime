@@ -1,0 +1,70 @@
+# Muu IME default keymap.
+#
+# This is Muu-original data released under the repository's MIT license.
+# Swift forwards raw events; the Rust session resolves them through this table.
+
+schema_version = 1
+
+[[bindings]]
+keycode = 36
+command = "commit"
+
+[[bindings]]
+keycode = 76
+command = "commit"
+
+# Escape first exits an active shifted-literal span without changing its
+# preedit. Once reading input is active, Escape keeps its normal cancel meaning.
+[[bindings]]
+keycode = 53
+command = "cancel"
+
+[[bindings]]
+keycode = 51
+command = "backspace"
+
+[[bindings]]
+keycode = 49
+command = "convert_or_next_candidate"
+
+[[bindings]]
+keycode = 49
+modifiers = ["shift"]
+command = "previous_candidate"
+
+# Command-Space exits a shifted literal span back to reading input when macOS
+# does not own that global shortcut and forwards the event to Muu. Otherwise it
+# commits an active composition before returning the event to the caller.
+[[bindings]]
+keycode = 49
+modifiers = ["command"]
+command = "commit_and_passthrough"
+
+[[bindings]]
+keycode = 125
+command = "next_candidate"
+
+[[bindings]]
+keycode = 126
+command = "previous_candidate"
+
+[[bindings]]
+keycode = 123
+command = "move_segment_left"
+
+[[bindings]]
+keycode = 124
+command = "move_segment_right"
+
+[[bindings]]
+keycode = 123
+modifiers = ["shift"]
+command = "shrink_segment"
+
+[[bindings]]
+keycode = 124
+modifiers = ["shift"]
+command = "extend_segment"
+
+# Numeric keys have no candidate-selection binding. Bare, keypad, decorated,
+# and modified numeric events follow normal Rust composition/keymap semantics.

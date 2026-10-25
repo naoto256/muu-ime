@@ -1,0 +1,636 @@
+{
+  "format_version": 1,
+  "assets": [
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "local::tests::production_high_cardinality_readings_fit_the_recalibrated_budget",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/local.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "local::tests::production_largest_direct_reading_set_remains_reachable",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/local.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "local::tests::production_repeated_prolonged_marks_complete_within_the_search_budget",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/local.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "local::tests::production_repeated_prolonged_marks_stay_bounded_without_preview_dominance",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/local.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_candidate_paths_keep_particle_and_compound_token_boundaries",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_dictionary_exposes_arrow_candidates_without_rewriting_phrases",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_dictionary_exposes_complete_mozc_symbol_readings",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_dictionary_exposes_sudachi_lexical_classes_without_name_noise",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_dictionary_ranks_canonical_kana_punctuation_before_ascii",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_dictionary_resize_reaches_each_requested_boundary",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-conversion",
+      "target": "lib",
+      "name": "operations::tests::production_dictionary_rewrites_numbers_and_dates_without_lexical_regressions",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-conversion/src/operations.rs"
+    },
+    {
+      "package": "muu-ffi",
+      "target": "lib",
+      "name": "tests::startup_learning_requires_matching_dictionary_fingerprint",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-ffi/src/lib.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "lib",
+      "name": "zenz::workspace_tests::chunked_head_keeps_all_targets_and_trie_matches_independent_scoring",
+      "requires": [
+        "zenz"
+      ],
+      "source": "crates/muu-lm/src/zenz.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "lib",
+      "name": "zenz_weights::tests::every_packed_embedding_row_matches_eager_decoding",
+      "requires": [
+        "zenz"
+      ],
+      "source": "crates/muu-lm/src/zenz_weights.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "test:golden",
+      "name": "edge_rejects_an_eos_outside_its_embedding_vocabulary",
+      "requires": [
+        "edge"
+      ],
+      "source": "crates/muu-lm/tests/golden.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "test:golden",
+      "name": "edge_rejects_an_unsupported_untied_head",
+      "requires": [
+        "edge"
+      ],
+      "source": "crates/muu-lm/tests/golden.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "test:golden",
+      "name": "prefers_the_homophone_that_fits_the_sentence",
+      "requires": [
+        "edge"
+      ],
+      "source": "crates/muu-lm/tests/golden.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "test:golden",
+      "name": "scores_match_the_reference_implementation",
+      "requires": [
+        "edge"
+      ],
+      "source": "crates/muu-lm/tests/golden.rs"
+    },
+    {
+      "package": "muu-lm",
+      "target": "test:zenz_golden",
+      "name": "pinned_zenz_matches_reference_scores_and_identifies_its_policy",
+      "requires": [
+        "zenz"
+      ],
+      "source": "crates/muu-lm/tests/zenz_golden.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "candidate_presentation::tests::production_symbols_move_while_generation_choices_and_paths_stay_identical",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/candidate_presentation.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "core::tests::background_completion_changes_the_next_conversion_and_reuses_one_model",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/core.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "core::tests::background_loader_failure_preserves_real_dictionary_conversion",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/core.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "core::tests::requested_model_fallback_and_learning_authority_are_captured_together",
+      "requires": [
+        "edge",
+        "zenz"
+      ],
+      "source": "crates/muu-session/src/core.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "postal_code_file::tests::public_seed_bytes_count_order_and_manifest_are_unchanged",
+      "requires": [
+        "public_seed"
+      ],
+      "source": "crates/muu-session/src/postal_code_file.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::learning_bias_tests::bias_uses_run_dictionary_tokens_once_then_margin_and_reading_identity",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::baseline_report_names_actual_input_path_despite_same_surface_candidate_combinations",
+      "requires": [
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::imported_word_with_particle_is_preserved_through_partial_run_selection",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::katakana_prolonged_marks_leave_the_following_hiragana_selectable",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::postal_literal_and_particle_are_preserved_through_partial_run_selection",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::reading_identity_is_rejected_per_run_without_rewriting_scored_evidence",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::registered_noun_with_a_particle_is_fixed_while_other_segments_are_scored",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::registered_word_in_a_mixed_segment_protects_only_intersecting_runs",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::romaji_sentence_uses_two_selection_runs_and_one_lm_state_read",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::selection_report_matches_whole_surfaces_and_actual_applied_nodes_with_bounded_context",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::migrated_tests::selection_runs_cross_punctuation_numbers_latin_katakana_and_symbols",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection/tests.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::tests::a_budget_failure_keeps_one_run_and_does_not_stop_the_next_run",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "selection::tests::result_copy_budget_failure_keeps_the_run_and_does_not_score",
+      "requires": [
+        "edge"
+      ],
+      "source": "crates/muu-session/src/selection.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::alnum_input_commits_converted_segments_without_leaving_ghost_state",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::conversion_lm_replaces_a_homophone_only_when_configured",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::full_lattice_selection_resegments_and_navigation_preserves_the_applied_paths",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::kana_punctuation_stays_in_preedit_and_offers_ascii_as_second_candidate",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::production_dictionary_return_commits_all_selected_segments_at_once",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::production_function_word_chain_converts_when_path_evidence_exceeds_its_budget",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::production_long_phrase_conversion_stays_within_complete_path_budget",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::conversion::production_numeric_variant_table_exposes_circled_and_roman_candidates",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/conversion.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::input::first_product_quality_cases_have_an_explainable_baseline",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/input.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::input::production_dictionary_key_events_resize_to_end_and_back",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/input.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::input::resizing_one_selected_span_preserves_the_other_runs_lm_choices",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/input.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::both_focus_navigation_entries_preserve_lm_manual_choices_and_learning_marks",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::exact_node_replacements_reject_the_word_but_not_unchanged_particles",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::learning_report_keeps_model_scores_and_the_conversion_captured_counts",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::merging_a_word_and_particle_does_not_reject_either_original_node",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::one_space_returns_to_the_learned_generation_candidate_after_lm_selection",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::returning_to_the_same_token_in_the_same_range_does_not_reject_it",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::learning::shrinking_changes_the_range_and_does_not_invent_a_rejection_correspondence",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/learning.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::recording::production_session_records_generation_as_the_selection_baseline_in_v5",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/src/session/tests/recording.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::recording::v5_records_a_manual_candidate_outside_the_scored_sixteen",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/recording.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::recording::v5_records_the_two_public_surface_representative_mismatches",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/src/session/tests/recording.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "test:production_candidate_contracts",
+      "name": "homophone::independent_candidate_cases_remain_reachable_in_production",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/tests/production_candidate_contracts.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "test:production_candidate_contracts",
+      "name": "homophone::inspect_production_candidate_coverage_for_homophone_families",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/tests/production_candidate_contracts.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "test:production_candidate_contracts",
+      "name": "homophone::sequence::sequence_gold_is_disjoint_and_exposes_candidate_generation_ceiling",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/tests/production_candidate_contracts.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "test:production_candidate_contracts",
+      "name": "kisha::production_dictionary_matches_the_recorded_kisha_baseline",
+      "requires": [
+        "dictionary"
+      ],
+      "source": "crates/muu-session/tests/production_candidate_contracts.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "test:production_lm_session",
+      "name": "edge_session_preserves_initial_candidates_runs_and_commit",
+      "requires": [
+        "dictionary",
+        "edge"
+      ],
+      "source": "crates/muu-session/tests/production_lm_session.rs"
+    },
+    {
+      "package": "muu-session",
+      "target": "test:production_lm_session",
+      "name": "zenz_session_preserves_initial_candidates_runs_and_commit",
+      "requires": [
+        "dictionary",
+        "zenz"
+      ],
+      "source": "crates/muu-session/tests/production_lm_session.rs"
+    }
+  ],
+  "scale": [
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "dictionary_catalog::tests::product_scale_catalog_builds_within_the_declared_budget",
+      "requires": []
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "dictionary_catalog::tests::product_scale_same_reading_catalog_is_rejected_before_runtime_materialization",
+      "requires": []
+    },
+    {
+      "package": "muu-session",
+      "target": "lib",
+      "name": "session::tests::vocabulary::imported_dictionary_max_surface_payload_is_byte_bounded",
+      "requires": []
+    },
+    {
+      "package": "muu-lm",
+      "target": "lib",
+      "name": "model::tests::linear_rejects_input_shape_in_release",
+      "requires": []
+    },
+    {
+      "package": "muu-lm",
+      "target": "lib",
+      "name": "model::tests::linear_rejects_weight_shape_in_release",
+      "requires": []
+    }
+  ]
+}

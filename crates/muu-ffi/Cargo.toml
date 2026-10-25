@@ -1,0 +1,19 @@
+[package]
+name = "muu-ffi"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+rust-version.workspace = true
+
+[lib]
+crate-type = ["lib", "staticlib"]
+
+[dependencies]
+muu-session = { path = "../muu-session" }
+serde = { workspace = true, features = ["derive"] }
+serde_json.workspace = true
+
+[dev-dependencies]
+muu-dict = { path = "../muu-dict" }
+tempfile = "3.20"
+muu-romaji = { path = "../muu-romaji" }

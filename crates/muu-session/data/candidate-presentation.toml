@@ -1,0 +1,62 @@
+# Candidate placement: docs/src/internals/conversion.md「候補一覧の見え方」. Positions are one-based; the first
+# two candidates preserve model selection and the one-Space baseline return.
+schema_version = 1
+protected_prefix = 2
+
+# Native aliases retain pinned source order. An absent position means append.
+[[auxiliaries]]
+kind = "emoticon"
+all_reading = "かおもじ"
+position = 3
+
+[[auxiliaries]]
+kind = "emoji"
+all_reading = "えもじ"
+position = 3
+
+[[auxiliaries]]
+kind = "single_kanji"
+
+[[symbols]]
+reading = "きごう"
+position = 3
+
+[[symbols]]
+reading = "やじるし"
+position = 3
+limit = 3
+
+[[symbols]]
+reading = "ほし"
+position = 3
+limit = 3
+
+[[symbols]]
+reading = "まる"
+position = 3
+limit = 3
+
+[[symbols]]
+reading = "さんかく"
+position = 3
+limit = 3
+
+[[symbols]]
+reading = "しかく"
+position = 3
+limit = 3
+
+[[symbols]]
+reading = "おんぷ"
+position = 3
+limit = 3
+
+[[symbols]]
+reading = "こめ"
+position = 3
+limit = 1
+
+[[symbols]]
+reading = "はーと"
+position = 3
+limit = 3

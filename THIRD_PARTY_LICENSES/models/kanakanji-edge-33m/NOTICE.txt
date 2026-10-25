@@ -1,0 +1,33 @@
+kanakanji-edge-33m — model and data attribution
+==============================================
+
+Muu can use yuuki14202028/kanakanji-edge-33m for conversion selection.
+Model weights, tokenizer files and training data are not included in this
+license directory or in the application bundle. This notice records the
+provenance of the optional model; it grants no additional rights.
+
+Model: yuuki14202028/kanakanji-edge-33m
+Pinned revision: da588df2db17e5ab69316986823806ec5f911450
+Upstream model card:
+  https://huggingface.co/yuuki14202028/kanakanji-edge-33m
+Pinned license/provenance statement:
+  https://huggingface.co/yuuki14202028/kanakanji-edge-33m/blob/da588df2db17e5ab69316986823806ec5f911450/README.md
+
+Weights: Apache License 2.0.
+  https://www.apache.org/licenses/LICENSE-2.0
+
+Tokenizer: inherited from ku-nlp/gpt2-small-japanese-char, Kyoto University
+Kurohashi Laboratory, under Creative Commons Attribution-ShareAlike 4.0.
+The model's three added control tokens are separately Apache-2.0.
+  https://huggingface.co/ku-nlp/gpt2-small-japanese-char
+  https://creativecommons.org/licenses/by-sa/4.0/
+
+Training dataset: Miwa-Keita/zenz-v2.5-dataset. Upstream attributes Wikipedia
+material under CC BY-SA 4.0 and llm-jp-corpus-v3 under ODC Attribution
+(ODC-BY). These are data-source licenses, not the weights' Apache-2.0 license.
+See the upstream dataset/model notices for their respective scope.
+  https://huggingface.co/datasets/Miwa-Keita/zenz-v2.5-dataset
+  https://opendatacommons.org/licenses/by/
+
+This is factual attribution only. The model, tokenizer and data contributors
+do not endorse Muu.

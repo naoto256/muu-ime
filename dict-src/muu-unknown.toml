@@ -1,0 +1,56 @@
+# Muu-original character-class unknown-word model.
+#
+# This data is not copied from Mozc (Mozc does not ship char.def/unk.def).
+# Context IDs select semantically matching rows from the pinned Mozc id.def.
+# Word costs are the empirical p99 of vendored lexicon entries whose left and
+# right context IDs both equal the selected row. This keeps unknown nodes in
+# the real dictionary's cost scale while making them fallback candidates for
+# at least 99% of known entries in the same context.
+#
+# Samples at google/mozc@3f235b4eb6fcff7d14ef5f0fb8ee56de7ee4c732:
+#   2044 名詞,数,アラビア数字: n=21, p99=3333
+#   2643 記号,アルファベット: n=47, p99=6300
+#   1851 名詞,一般: n=269757, p99=10526
+#   2644 記号,一般: n=67, p99=14094
+
+schema_version = 1
+
+[[classes]]
+class = "number"
+group = true
+max_length = 64
+left_context_id = 2044
+right_context_id = 2044
+word_cost = 3333
+
+[[classes]]
+class = "ascii_alphabetic"
+group = true
+max_length = 64
+left_context_id = 2643
+right_context_id = 2643
+word_cost = 6300
+
+[[classes]]
+class = "katakana"
+group = true
+max_length = 64
+left_context_id = 1851
+right_context_id = 1851
+word_cost = 10526
+
+[[classes]]
+class = "kanji"
+group = true
+max_length = 64
+left_context_id = 1851
+right_context_id = 1851
+word_cost = 10526
+
+[[classes]]
+class = "other"
+group = false
+max_length = 1
+left_context_id = 2644
+right_context_id = 2644
+word_cost = 14094

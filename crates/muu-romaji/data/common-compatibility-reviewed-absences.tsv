@@ -1,0 +1,27 @@
+# Reviewed aliases absent from the pinned Mozc common-sound source.
+# These are deliberately not behavior fixtures: no repository contract or
+# pinned upstream row supports them, so Muu does not adopt them by inference.
+# columns: input decision reason
+# SPDX-License-Identifier: MIT
+qya	excluded	absent_from_pinned_mozc_and_repo_contract
+qyi	excluded	absent_from_pinned_mozc_and_repo_contract
+qyu	excluded	absent_from_pinned_mozc_and_repo_contract
+qye	excluded	absent_from_pinned_mozc_and_repo_contract
+qyo	excluded	absent_from_pinned_mozc_and_repo_contract
+fyi	excluded	absent_from_pinned_mozc_and_repo_contract
+fye	excluded	absent_from_pinned_mozc_and_repo_contract
+whya	excluded	absent_from_pinned_mozc_and_repo_contract
+whyi	excluded	absent_from_pinned_mozc_and_repo_contract
+whyu	excluded	absent_from_pinned_mozc_and_repo_contract
+whye	excluded	absent_from_pinned_mozc_and_repo_contract
+whyo	excluded	absent_from_pinned_mozc_and_repo_contract
+shya	excluded	absent_from_pinned_mozc_and_repo_contract
+shyi	excluded	absent_from_pinned_mozc_and_repo_contract
+shyu	excluded	absent_from_pinned_mozc_and_repo_contract
+shye	excluded	absent_from_pinned_mozc_and_repo_contract
+shyo	excluded	absent_from_pinned_mozc_and_repo_contract
+chya	excluded	absent_from_pinned_mozc_and_repo_contract
+chyi	excluded	absent_from_pinned_mozc_and_repo_contract
+chyu	excluded	absent_from_pinned_mozc_and_repo_contract
+chye	excluded	absent_from_pinned_mozc_and_repo_contract
+chyo	excluded	absent_from_pinned_mozc_and_repo_contract

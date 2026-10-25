@@ -1,0 +1,493 @@
+{
+  "components": [
+    {
+      "fingerprint": "bbb26ac63696d27d",
+      "name": "addr2line",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/addr2line-0.25.1/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libaddr2line-bbb26ac63696d27d.rlib",
+      "selected_license": "MIT",
+      "sha256": "df0847dee625fb1279bc45bf756b93a18f3eab64611060670e71b84b2da11514",
+      "version": "0.25.1"
+    },
+    {
+      "fingerprint": "fc068641f6fabebb",
+      "name": "adler2",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/adler2-2.0.1/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libadler2-fc068641f6fabebb.rlib",
+      "selected_license": "MIT",
+      "sha256": "9b23797ec8445878802d075cc22a2ae3f254bcebe7c00ac1fb5c80bf8455451f",
+      "version": "2.0.1"
+    },
+    {
+      "fingerprint": "c014868534000b1e",
+      "name": "alloc",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html"
+      ],
+      "object_count": 1,
+      "rlib": "liballoc-c014868534000b1e.rlib",
+      "selected_license": "MIT",
+      "sha256": "0776af148401e29d4b2d5e43ec98cbc8fa29d88b88726e2bfe4877078a994b63",
+      "version": "0.0.0"
+    },
+    {
+      "fingerprint": "d5af2b774562630e",
+      "name": "cfg_if",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/cfg-if-1.0.4/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libcfg_if-d5af2b774562630e.rlib",
+      "selected_license": "MIT",
+      "sha256": "fcfe38170b3d7a91029a627728de6c812b305706acac776d19f8545142b3487e",
+      "version": "1.0.4"
+    },
+    {
+      "fingerprint": "a3b0c64e605d713b",
+      "name": "compiler_builtins",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/compiler-builtins/LICENSE.txt",
+        "1.96.0/compiler-builtins/libm-LICENSE.txt",
+        "1.96.0/compiler-rt/LICENSE.TXT",
+        "1.96.0/compiler-rt/CREDITS.TXT"
+      ],
+      "object_count": 231,
+      "rlib": "libcompiler_builtins-a3b0c64e605d713b.rlib",
+      "selected_license": "MIT AND Apache-2.0 WITH LLVM-exception",
+      "sha256": "4b769e92a6e63923a40468672990e0af8763baf460aa94692561ab293411ed8f",
+      "version": "0.1.160"
+    },
+    {
+      "fingerprint": "3a29aa9df1ce1393",
+      "name": "core",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/licenses/Unicode-3.0.txt"
+      ],
+      "object_count": 1,
+      "rlib": "libcore-3a29aa9df1ce1393.rlib",
+      "selected_license": "MIT AND Unicode-3.0",
+      "sha256": "2216b2814f77201191d966af6949d3bf6523d006716bb98f7679b570230bd3c1",
+      "version": "0.0.0"
+    },
+    {
+      "fingerprint": "a5cd4700dd78ef8e",
+      "name": "gimli",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/gimli-0.32.3/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libgimli-a5cd4700dd78ef8e.rlib",
+      "selected_license": "MIT",
+      "sha256": "57d253b70e3ff87c272c16cd1905337cc8efeaa3acc6942b3241bbb496e1e9a8",
+      "version": "0.32.3"
+    },
+    {
+      "fingerprint": "81aeb5467e4f3c50",
+      "name": "hashbrown",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/hashbrown-0.16.1/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libhashbrown-81aeb5467e4f3c50.rlib",
+      "selected_license": "MIT",
+      "sha256": "04b2eb8d496bb891c37d10913793ed1911f89c98bd4d78a6c94eb510572ea356",
+      "version": "0.16.1"
+    },
+    {
+      "fingerprint": "9cb5d126ab503f82",
+      "name": "libc",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/libc-0.2.183/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "liblibc-9cb5d126ab503f82.rlib",
+      "selected_license": "MIT",
+      "sha256": "797b046b9ca0829478b890c684c0639ecb3aee0c8d0b1c7ecd84b5e68ff9a71d",
+      "version": "0.2.183"
+    },
+    {
+      "fingerprint": "885d1a1f957a425e",
+      "name": "memchr",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/memchr-2.7.6/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libmemchr-885d1a1f957a425e.rlib",
+      "selected_license": "MIT",
+      "sha256": "2eb4b7cc4edb94d79a6ddbf474a31bed33842a94afa526d6a70f26ec14c39e20",
+      "version": "2.7.6"
+    },
+    {
+      "fingerprint": "4afee05e9c62a9ad",
+      "name": "miniz_oxide",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/miniz_oxide-0.8.9/LICENSE-MIT.md"
+      ],
+      "object_count": 1,
+      "rlib": "libminiz_oxide-4afee05e9c62a9ad.rlib",
+      "selected_license": "MIT",
+      "sha256": "ce9f24200d1ab895104d2f4435b653f4cc488a3a85546a1ed10e0827b42b7691",
+      "version": "0.8.9"
+    },
+    {
+      "fingerprint": "6fe84aae5e693cdc",
+      "name": "object",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/object-0.37.3/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libobject-6fe84aae5e693cdc.rlib",
+      "selected_license": "MIT",
+      "sha256": "addb934c894edf063aab90e64df1a7f17ebf3a1a633faff6a2a0c288d5e3590c",
+      "version": "0.37.3"
+    },
+    {
+      "fingerprint": "d3e6422a9eb3a7ed",
+      "name": "panic_unwind",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html"
+      ],
+      "object_count": 1,
+      "rlib": "libpanic_unwind-d3e6422a9eb3a7ed.rlib",
+      "selected_license": "MIT",
+      "sha256": "3142cb073ff46e7c34c8ba5658782fdd8b7d5b810c10f5caa638abc5a05ccc5f",
+      "version": "0.0.0"
+    },
+    {
+      "fingerprint": "3425cca1cc81fe74",
+      "name": "rustc_demangle",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/crates/rustc-demangle-0.1.27/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "librustc_demangle-3425cca1cc81fe74.rlib",
+      "selected_license": "MIT",
+      "sha256": "d522e0ca350b8d966bb516bac86947bd64355f62264b74a6d4ffd7fc5d14f755",
+      "version": "0.1.27"
+    },
+    {
+      "fingerprint": "458cd96b757afe02",
+      "name": "rustc_std_workspace_alloc",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html"
+      ],
+      "object_count": 1,
+      "rlib": "librustc_std_workspace_alloc-458cd96b757afe02.rlib",
+      "selected_license": "MIT",
+      "sha256": "49f74296dd5e935dc1f3017c18790f8b64d45df1d845b06c9725957115f89218",
+      "version": "1.99.0"
+    },
+    {
+      "fingerprint": "49a94c2deaefa424",
+      "name": "rustc_std_workspace_core",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html"
+      ],
+      "object_count": 1,
+      "rlib": "librustc_std_workspace_core-49a94c2deaefa424.rlib",
+      "selected_license": "MIT",
+      "sha256": "6cc125332cc8ecb286eb86a296cc2ba59ad69fd236e30dfc27eacbffd1d8ab29",
+      "version": "1.99.0"
+    },
+    {
+      "fingerprint": "9cc64aabf2d9c512",
+      "name": "std",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html"
+      ],
+      "object_count": 1,
+      "rlib": "libstd-9cc64aabf2d9c512.rlib",
+      "selected_license": "MIT",
+      "sha256": "266f30a831dca5c79718048cc594031e1e9cbbe0df4feca2f45224674ba0bb07",
+      "version": "0.0.0"
+    },
+    {
+      "fingerprint": "e2f00a72e10975c8",
+      "name": "std_detect",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html",
+        "1.96.0/stdarch/LICENSE-MIT"
+      ],
+      "object_count": 1,
+      "rlib": "libstd_detect-e2f00a72e10975c8.rlib",
+      "selected_license": "MIT",
+      "sha256": "6d39d64ac9a91d3c03628b20029cc93a6389b3c03575e71fc1c1a12bc283aabb",
+      "version": "0.1.5"
+    },
+    {
+      "fingerprint": "77ad253c30d1dfb4",
+      "name": "unwind",
+      "notice_files": [
+        "1.96.0/LICENSE-MIT",
+        "1.96.0/COPYRIGHT-library.html"
+      ],
+      "object_count": 1,
+      "rlib": "libunwind-77ad253c30d1dfb4.rlib",
+      "selected_license": "MIT",
+      "sha256": "fe22304775ea4b5697d4fc522ec50b8d2d6f611f4748061c4629ab674be25ce8",
+      "version": "0.0.0"
+    }
+  ],
+  "in_tree": [
+    {
+      "copyright": [
+        "The Rust Project Developers (see https://thanks.rust-lang.org)"
+      ],
+      "license": "Apache-2.0 OR MIT",
+      "path": ".",
+      "selected_license": "MIT"
+    },
+    {
+      "copyright": [
+        "2014 Alex Crichton",
+        "The Rust Project Developers (see https://thanks.rust-lang.org)"
+      ],
+      "license": "Apache-2.0 OR MIT",
+      "path": "library/backtrace",
+      "selected_license": "MIT"
+    },
+    {
+      "copyright": [
+        "1991-2024 Unicode, Inc"
+      ],
+      "license": "Unicode-3.0",
+      "path": "library/core/src/unicode/unicode_data.rs",
+      "selected_license": "Unicode-3.0"
+    },
+    {
+      "copyright": [
+        "2019 The Crossbeam Project Developers",
+        "The Rust Project Developers (see https://thanks.rust-lang.org)"
+      ],
+      "license": "Apache-2.0 OR MIT",
+      "path": "library/std/src/sync/mpmc",
+      "selected_license": "MIT"
+    }
+  ],
+  "llvm_commit": "1cb4e3833c1919c2e6fb579a23ac0e2b22587b7e",
+  "notice_sha256": "e58c97a4c0c2e554237627241bb3edb8aaddbbf8c46e33d54fff4ad1e0f7ccec",
+  "rust_commit": "ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96",
+  "schema_version": 1,
+  "scope_notes": [
+    "The 19 sysroot rlibs are matched to a release muu-ffi staticlib before final linking. LTO/dead stripping is not used to omit notices.",
+    "All 144 non-Rust object members in that staticlib are present in compiler_builtins, including the aarch64 LSE assembly variants.",
+    "COPYRIGHT-library.html is the complete, unmodified upstream source report for all platforms; it is provenance, not a list of components in this macOS app.",
+    "Fuchsia, vex-sdk, WASI, Windows, SGX, dlmalloc and test/build-only cc/shlex/rand packages in that report are outside this target scope.",
+    "hashbrown disables default features; its optional foldhash default-hasher is not enabled by std. Unwind uses the macOS system unwinder, not a bundled libunwind.",
+    "The fixed library/Cargo.lock and the actual rlib inventory identify ten registry packages. Five (addr2line/adler2/memchr/miniz_oxide/object) are not separately listed in COPYRIGHT-library.html; their public archive license originals supplement that report.",
+    "compiler_builtins has MIT AND Apache-2.0 WITH LLVM-exception AND (MIT OR Apache-2.0) terms; its complete original, compiler-rt license/credits and bundled libm notice are preserved. It is not classified as MIT-only.",
+    "Compiler-rt and libm full notices include historical/conditional license text; inclusion preserves upstream wording without claiming every described implementation is linked."
+  ],
+  "source_copyrights": [
+    {
+      "crate": "gimli-0.32.3",
+      "line": 4,
+      "path": "src/constants.rs",
+      "text": "// Copyright 2016 The rust-dwarf Developers"
+    }
+  ],
+  "sources": [
+    {
+      "origin": {
+        "kind": "toolchain",
+        "path": "share/doc/rust/COPYRIGHT-library.html"
+      },
+      "path": "1.96.0/COPYRIGHT-library.html",
+      "sha256": "78c163fcec50e64bfd85fedb850c273595602fafa2b41f30f75d4e410b80ee83"
+    },
+    {
+      "origin": {
+        "kind": "reviewed",
+        "url": "https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/LICENSE-MIT"
+      },
+      "path": "1.96.0/LICENSE-MIT",
+      "sha256": "b71bd43a069ca0641a9ecfe585ca7b3c53b5cc1608f8b68321168698e28b5ea1"
+    },
+    {
+      "origin": {
+        "kind": "reviewed",
+        "url": "https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library/compiler-builtins/LICENSE.txt"
+      },
+      "path": "1.96.0/compiler-builtins/LICENSE.txt",
+      "sha256": "ab6eec6caf0fa5775e411c7a8bc6a45c4ef2956b0980b157ab74fc5cd62a928b"
+    },
+    {
+      "origin": {
+        "kind": "reviewed",
+        "url": "https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library/compiler-builtins/libm/LICENSE.txt"
+      },
+      "path": "1.96.0/compiler-builtins/libm-LICENSE.txt",
+      "sha256": "3823dda7cf046602f4b4e77ec8e227863dc4736037cc85bb33d9f19febe16bb7"
+    },
+    {
+      "origin": {
+        "kind": "reviewed",
+        "url": "https://github.com/rust-lang/llvm-project/blob/1cb4e3833c1919c2e6fb579a23ac0e2b22587b7e/compiler-rt/CREDITS.TXT"
+      },
+      "path": "1.96.0/compiler-rt/CREDITS.TXT",
+      "sha256": "a9901f47a089da41e4690682d00ce4cedaa2baf41fedbe79beee366d43ac2461"
+    },
+    {
+      "origin": {
+        "kind": "reviewed",
+        "url": "https://github.com/rust-lang/llvm-project/blob/1cb4e3833c1919c2e6fb579a23ac0e2b22587b7e/compiler-rt/LICENSE.TXT"
+      },
+      "path": "1.96.0/compiler-rt/LICENSE.TXT",
+      "sha256": "1a8f1058753f1ba890de984e48f0242a3a5c29a6a8f2ed9fd813f36985387e8d"
+    },
+    {
+      "origin": {
+        "archive_path": "addr2line-0.25.1/LICENSE-MIT",
+        "archive_sha256": "1b5d307320b3181d6d7954e663bd7c774a838b8220fe0593c86d9fb09f498b4b",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/addr2line/addr2line-0.25.1.crate"
+      },
+      "path": "1.96.0/crates/addr2line-0.25.1/LICENSE-MIT",
+      "sha256": "e99d88d232bf57d70f0fb87f6b496d44b6653f99f8a63d250a54c61ea4bcde40"
+    },
+    {
+      "origin": {
+        "archive_path": "adler2-2.0.1/LICENSE-MIT",
+        "archive_sha256": "320119579fcad9c21884f5c4861d16174d0e06250625266f50fe6898340abefa",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/adler2/adler2-2.0.1.crate"
+      },
+      "path": "1.96.0/crates/adler2-2.0.1/LICENSE-MIT",
+      "sha256": "23f18e03dc49df91622fe2a76176497404e46ced8a715d9d2b67a7446571cca3"
+    },
+    {
+      "origin": {
+        "archive_path": "cfg-if-1.0.4/LICENSE-MIT",
+        "archive_sha256": "9330f8b2ff13f34540b44e946ef35111825727b38d33286ef986142615121801",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/cfg-if/cfg-if-1.0.4.crate"
+      },
+      "path": "1.96.0/crates/cfg-if-1.0.4/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "origin": {
+        "archive_path": "gimli-0.32.3/LICENSE-MIT",
+        "archive_sha256": "e629b9b98ef3dd8afe6ca2bd0f89306cec16d43d907889945bc5d6687f2f13c7",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/gimli/gimli-0.32.3.crate"
+      },
+      "path": "1.96.0/crates/gimli-0.32.3/LICENSE-MIT",
+      "sha256": "7b63ecd5f1902af1b63729947373683c32745c16a10e8e6292e2e2dcd7e90ae0"
+    },
+    {
+      "origin": {
+        "archive_path": "hashbrown-0.16.1/LICENSE-MIT",
+        "archive_sha256": "841d1cc9bed7f9236f321df977030373f4a4163ae1a7dbfe1a51a2c1a51d9100",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/hashbrown/hashbrown-0.16.1.crate"
+      },
+      "path": "1.96.0/crates/hashbrown-0.16.1/LICENSE-MIT",
+      "sha256": "ff8f68cb076caf8cefe7a6430d4ac086ce6af2ca8ce2c4e5a2004d4552ef52a2"
+    },
+    {
+      "origin": {
+        "archive_path": "libc-0.2.183/LICENSE-MIT",
+        "archive_sha256": "b5b646652bf6661599e1da8901b3b9522896f01e736bad5f723fe7a3a27f899d",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/libc/libc-0.2.183.crate"
+      },
+      "path": "1.96.0/crates/libc-0.2.183/LICENSE-MIT",
+      "sha256": "123a331b5dbf04c30097fa43b8f858bc85df671fe776de498d01f3d6b7c1f69e"
+    },
+    {
+      "origin": {
+        "archive_path": "memchr-2.7.6/LICENSE-MIT",
+        "archive_sha256": "f52b00d39961fc5b2736ea853c9cc86238e165017a493d1d5c8eac6bdc4cc273",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/memchr/memchr-2.7.6.crate"
+      },
+      "path": "1.96.0/crates/memchr-2.7.6/LICENSE-MIT",
+      "sha256": "0f96a83840e146e43c0ec96a22ec1f392e0680e6c1226e6f3ba87e0740af850f"
+    },
+    {
+      "origin": {
+        "archive_path": "miniz_oxide-0.8.9/LICENSE-MIT.md",
+        "archive_sha256": "1fa76a2c86f704bdb222d66965fb3d63269ce38518b83cb0575fca855ebb6316",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/miniz_oxide/miniz_oxide-0.8.9.crate"
+      },
+      "path": "1.96.0/crates/miniz_oxide-0.8.9/LICENSE-MIT.md",
+      "sha256": "799e9ca9d179295ef372f25d3769cdda7d25bb2668add6a6a1e22d1e4c678b8d"
+    },
+    {
+      "origin": {
+        "archive_path": "object-0.37.3/LICENSE-MIT",
+        "archive_sha256": "ff76201f031d8863c38aa7f905eca4f53abbfa15f609db4277d44cd8938f33fe",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/object/object-0.37.3.crate"
+      },
+      "path": "1.96.0/crates/object-0.37.3/LICENSE-MIT",
+      "sha256": "0b74dfa0bcee5c420c6b7f67b4b2658f9ab8388c97b8e733975f2cecbdd668a6"
+    },
+    {
+      "origin": {
+        "archive_path": "rustc-demangle-0.1.27/LICENSE-MIT",
+        "archive_sha256": "b50b8869d9fc858ce7266cce0194bd74df58b9d0e3f6df3a9fc8eb470d95c09d",
+        "kind": "reviewed",
+        "url": "https://static.crates.io/crates/rustc-demangle/rustc-demangle-0.1.27.crate"
+      },
+      "path": "1.96.0/crates/rustc-demangle-0.1.27/LICENSE-MIT",
+      "sha256": "378f5840b258e2779c39418f3f2d7b2ba96f1c7917dd6be0713f88305dbda397"
+    },
+    {
+      "origin": {
+        "kind": "toolchain",
+        "path": "share/doc/rust/licenses/Unicode-3.0.txt"
+      },
+      "path": "1.96.0/licenses/Unicode-3.0.txt",
+      "sha256": "f5062c9a188d81dfe66b56db4182dcf9e4b17c0d9b0d311a8e20b3a1b075c443"
+    },
+    {
+      "origin": {
+        "kind": "reviewed",
+        "url": "https://github.com/rust-lang/rust/blob/ac68faa20c58cbccd01ee7208bf3b6e93a7d7f96/library/stdarch/LICENSE-MIT"
+      },
+      "path": "1.96.0/stdarch/LICENSE-MIT",
+      "sha256": "29662666b44dff84977b46e05642cdef910bc3a93a17b5fd86e632bafa59cf21"
+    }
+  ],
+  "target": "aarch64-apple-darwin",
+  "version": "1.96.0"
+}

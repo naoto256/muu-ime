@@ -1,0 +1,78 @@
+# Stable, deliberately coarse POS classes for the kana-kanji segmenter.
+#
+# Mozc id.def has 2,672 context IDs, including inflection-specific variants.
+# Each context ID is mapped by its first POS field. Tokens retain separate
+# left and right classes so compound tokens with lid != rid keep both endpoint
+# categories. IDs are frozen with the Muu dictionary format.
+
+schema_version = 1
+
+[[classes]]
+mozc_major = "BOS/EOS"
+muu = "bos_eos"
+id = 0
+
+[[classes]]
+mozc_major = "その他"
+muu = "other"
+id = 1
+
+[[classes]]
+mozc_major = "フィラー"
+muu = "filler"
+id = 2
+
+[[classes]]
+mozc_major = "副詞"
+muu = "adverb"
+id = 3
+
+[[classes]]
+mozc_major = "助動詞"
+muu = "auxiliary_verb"
+id = 4
+
+[[classes]]
+mozc_major = "助詞"
+muu = "particle"
+id = 5
+
+[[classes]]
+mozc_major = "動詞"
+muu = "verb"
+id = 6
+
+[[classes]]
+mozc_major = "名詞"
+muu = "noun"
+id = 7
+
+[[classes]]
+mozc_major = "形容詞"
+muu = "adjective"
+id = 8
+
+[[classes]]
+mozc_major = "感動詞"
+muu = "interjection"
+id = 9
+
+[[classes]]
+mozc_major = "接続詞"
+muu = "conjunction"
+id = 10
+
+[[classes]]
+mozc_major = "接頭詞"
+muu = "prefix"
+id = 11
+
+[[classes]]
+mozc_major = "記号"
+muu = "symbol"
+id = 12
+
+[[classes]]
+mozc_major = "連体詞"
+muu = "prenominal"
+id = 13

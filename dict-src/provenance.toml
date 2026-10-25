@@ -1,0 +1,202 @@
+# Provenance for human-readable source data bundled with Muu IME.
+# Upstream re-imports are intentional manual events, never an automatic
+# per-release update. Every re-import must update the pin and file hashes.
+
+schema_version = 1
+update_policy = "manual"
+
+[[sources]]
+name = "mozc-oss"
+version = "git:3f235b4eb6fcff7d14ef5f0fb8ee56de7ee4c732"
+version_date = "2026-07-17"
+upstream_url = "https://github.com/google/mozc"
+spdx_license = "BSD-3-Clause AND LicenseRef-NAIST-2000 AND LicenseRef-ICOT-Free-Software AND LicenseRef-Okinawa-Public-Domain"
+copyright_holders = [
+  "Google Inc.",
+  "Nara Institute of Science and Technology",
+  "ICOT",
+]
+attribution_text = [
+  "THIRD_PARTY_LICENSES/dictionaries/mozc/LICENSE.txt",
+  "THIRD_PARTY_LICENSES/dictionaries/mozc/README.txt",
+]
+source_root = "third_party/mozc-oss"
+used_fields = [
+  "reading",
+  "left_context_id",
+  "right_context_id",
+  "word_cost",
+  "surface",
+  "pos_id",
+  "connection_cost",
+  "symbol_readings",
+  "symbol_surface",
+  "symbol_pos",
+  "symbol_order",
+]
+transformation = "vendors upstream data verbatim. maps dictionary00..09, id.def, connection_single_column.txt, symbol.tsv, and symbol ordering_rule.txt into the deterministic Muu binary dictionary. Symbol rows expand their space-separated readings, preserve Mozc relative ordering in ten-point cost steps, and use a lexical-safe base cost."
+notes = "The vendored upstream set is 24 data and README files plus LICENSE; BUILD.bazel is intentionally excluded. Mozc does not distribute char.def or unk.def. Muu's character-class unknown-word model is original Muu code."
+
+[[sources.files]]
+path = "third_party/mozc-oss/LICENSE"
+sha256 = "44cdd923b91ea9199293abecc2762c70c87dbf1e581c027a94c416368d1a648c"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/README.md"
+sha256 = "a05a67759c983e5e53d7634f2f5ed71531233e51b2cea0f8c404dfed3323c129"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/README.txt"
+sha256 = "6b1de66bc6fa30e0b45dc45b8c8f6c57bd78aff923c261a3efffac8eb86f7bac"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/aux_dictionary.tsv"
+sha256 = "8103d07c4eb18892282983299cbb20284a0f74bc596dda63831787b69aa7ce6c"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/collocation.txt"
+sha256 = "45fe60749f79e44bd7255b771522e963fd9d2a54005e4b2cf19d5e8204253812"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/collocation_suppression.txt"
+sha256 = "678d1b9627d7ed39bc269b6379ccc924e2bea27e3270e62b010dababd77fb300"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/connection_single_column.txt"
+sha256 = "68823a1f6617372ccb89afdbcb334d7a0bcfa82c9c5dda03fc1f80f1cab5c48e"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary00.txt"
+sha256 = "9e07ce292932c4fff327ed8cb06274c09acca556bd8bdf7c7ef1f6173eae3b61"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary01.txt"
+sha256 = "836fd5fd8399510de0d8ef7b33be913cca6bbaee7b712cc8045fba03f4c75a89"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary02.txt"
+sha256 = "93943858d0cfd092b849a78def6901eaf228177e1ac5663544e865a3a1e45a9e"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary03.txt"
+sha256 = "cb9f1b0b4a7550d682d86244a021cd17e0b15366328819e69135b5f183a1a24b"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary04.txt"
+sha256 = "9fdc4e3948d03463de13ab5782adffbc11dd06e934cb80138c5920029cd3d2f6"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary05.txt"
+sha256 = "199e3b0f050b691823ae7ba943090d437f51af6436b27c5f3dc69cafa12000e4"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary06.txt"
+sha256 = "b95b14f7770ae2a824bc8e9fad8b03c1bc45c504f93a36554b8b56daa0368d2a"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary07.txt"
+sha256 = "7f53649b529d4c8c495d3a8dd9c4d489dfe7696080f7423107ff01331174be48"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary08.txt"
+sha256 = "50a31bb5fc1646721b00be371a5695dffab1292bda143e1e59cc70cbbdd8643f"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary09.txt"
+sha256 = "4e5fcd4cbfbf11395166a37b506f547fc54d20edc0884f5184ecd3fc705f0d9a"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/dictionary_filter.tsv"
+sha256 = "802f2c76516bf1bbb30cd501cc343abf59aa179d3f98917297d961fb9921a2fb"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/evaluation.tsv"
+sha256 = "b31842bef8b2bdaef4d13a1f19581366749285bfa7365de8b302456956a3e8ce"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/id.def"
+sha256 = "07a05a268c3783b7e02b36e4aa591555a2dd19a1f3c93891576740761c154f2d"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/reading_correction.tsv"
+sha256 = "08066c2af7e6d3eba0ff7b1a9e10d876436b639d036680d1f7f91a8306ec22d7"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/suffix.txt"
+sha256 = "37ace4c057615a10c2e06e19e57010916390b0709f0156d1ee17ce82f3272dd9"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/dictionary_oss/suggestion_filter.txt"
+sha256 = "2c8fccb65be739cadfa3524921584e84914c96b9977bd1d42834d79700eaa6b5"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/symbol/ordering_rule.txt"
+sha256 = "64350ef978280900ac8b9d1a9207e85b405ef91677b8c8ed6fc05794b9dfecb8"
+
+[[sources.files]]
+path = "third_party/mozc-oss/src/data/symbol/symbol.tsv"
+sha256 = "bc68b032a195f203dccba6f95667424199ba9b185fee2be64eeaa959253c097a"
+
+[[sources]]
+name = "sudachidict-core"
+version = "20260723"
+version_date = "2026-07-23"
+upstream_url = "https://github.com/WorksApplications/SudachiDict"
+spdx_license = "Apache-2.0 AND BSD-3-Clause"
+copyright_holders = [
+  "Works Applications Co., Ltd.",
+  "The UniDic Consortium",
+  "Toshinori Sato and mecab-unidic-NEologd contributors",
+]
+attribution_text = [
+  "THIRD_PARTY_LICENSES/dictionaries/sudachidict/LICENSE-2.0.txt",
+  "THIRD_PARTY_LICENSES/dictionaries/sudachidict/LEGAL.txt",
+]
+source_root = "dict-src/sudachidict-core-supplement.tsv"
+used_fields = [
+  "reading",
+  "surface",
+  "word_cost",
+  "pos",
+]
+transformation = "The manual re-import script verifies the official small_lex.zip and core_lex.zip SHA-256 pins, converts Katakana readings to NFC Hiragana, selects ordinary nouns and declared proper-noun classes, maps them to pinned Mozc context IDs, removes exact reading/surface pairs already present in Mozc, retains the lowest cost for exact duplicate records, applies deterministic bounds, and atomically emits the committed TSV. Product builds consume only that generated TSV."
+notes = "Official archive SHA-256: small_lex.zip b578ac9545899783d5d7e30d5d78d5d9dcf40b36965d4af0663ec2eb041c1093; core_lex.zip a2b39e1572adab08a649b1390b134517adc55f1d733c59358b113298788bf31c. The archives remain outside the product repository; this manifest, generator, generated TSV, and full license notices provide the reproducible audit trail."
+
+[[sources.files]]
+path = "dict-src/sudachidict-core-supplement.tsv"
+sha256 = "c8f912ff9ab6eedf08482105ad8007ba229f49c6474d8d56c8449fdc1f78de4c"
+
+[[sources.files]]
+path = "scripts/generate-sudachidict-core-supplement.py"
+sha256 = "37705f206dab23011e39181706c6428e6f7ee29599a63ba479bfa807edb75d20"
+
+[[sources.files]]
+path = "THIRD_PARTY_LICENSES/dictionaries/sudachidict/LICENSE-2.0.txt"
+sha256 = "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+
+[[sources.files]]
+path = "THIRD_PARTY_LICENSES/dictionaries/sudachidict/LEGAL.txt"
+sha256 = "725a8776b38e058b185e905594bc9a2437dbf3787df022fffeefedb9a84e4665"
+
+[[sources]]
+name = "muu-original-romaji"
+version = "schema-v1"
+version_date = "2026-07-26"
+upstream_url = "repo:crates/muu-romaji/data/muu-original.toml"
+spdx_license = "MIT"
+copyright_holders = ["Muu IME contributors"]
+attribution_text = ["LICENSE"]
+source_root = "crates/muu-romaji/data"
+used_fields = [
+  "input",
+  "output",
+  "next",
+  "boundary_inputs",
+  "nasal_rules",
+]
+transformation = "Parsed and compiled into an in-memory longest-prefix trie; no generated cache is authoritative."
+notes = "Muu original, derived independently from standard Japanese romanization conventions and not copied from any existing IME."
+
+[[sources.files]]
+path = "crates/muu-romaji/data/muu-original.toml"
+sha256 = "e8d804460c209142eb3e6332dfc244d082df3a72098b67399a9a174f2f7795d6"

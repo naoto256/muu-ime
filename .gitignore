@@ -1,0 +1,9 @@
+.DS_Store
+/target/
+/build/
+.build/
+xcuserdata/
+DerivedData/
+*.xcresult
+/docs/book/
+__pycache__/

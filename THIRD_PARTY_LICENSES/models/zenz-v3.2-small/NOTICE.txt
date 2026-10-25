@@ -1,0 +1,48 @@
+Optional conversion model zenz-v3.2-small (not bundled)
+=====================================================
+
+Source: https://huggingface.co/Miwa-Keita/zenz-v3.2-small-gguf
+Revision: c67e03e07d215c869f591b274c1631170d3e11fe
+File: ggml-model-Q5_K_M.gguf
+SHA-256: 29c223d4c23327b80fd13ebb5ab2555057a46317997d5da391584ffbef0db673
+
+The pinned model card declares Apache-2.0 for the model. Muu IME follows
+those published terms; responsibility for upstream model lineage rests with
+the zenz publisher.
+
+The tokenizer vocabulary and merges embedded in the same GGUF originate from
+ku-nlp/gpt2-small-japanese-char, revision
+f1623eb5e26cee239d8fc5a661c48482811b3dbb:
+https://huggingface.co/ku-nlp/gpt2-small-japanese-char
+That tokenizer is licensed under CC BY-SA 4.0, separately from the
+Apache-2.0 model weights.
+
+Muu IME does not bundle the model. Users explicitly download the pinned
+GGUF from the source above through About; it is not acquired automatically.
+
+GGUF Q5_K / Q6_K unpacking equations and GPT-2 byte-BPE behavior follow the
+azooKey llama.cpp fork b4846, commit 10131b23ee0dbd9d03dfc618cec9fe3402919277:
+https://github.com/ensan-hcl/llama.cpp
+Muu IME does not link llama.cpp; the implemented algorithms retain its notice.
+
+MIT License
+
+Copyright (c) 2023-2024 The ggml authors
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.

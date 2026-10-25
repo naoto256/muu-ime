@@ -1,0 +1,143 @@
+Rust source copyright notices
+============================
+
+Original source notices. The selected license and its full text are listed in manifest.json.
+
+bit-set 0.8.0 (MIT)
+
+src/lib.rs:1
+// Copyright 2012-2014 The Rust Project Developers. See the COPYRIGHT
+
+bit-vec 0.8.0 (MIT)
+
+src/lib.rs:1
+// Copyright 2012-2023 The Rust Project Developers. See the COPYRIGHT
+
+fancy-regex 0.14.0 (MIT)
+
+src/analyze.rs:1
+// Copyright 2016 The Fancy Regex Authors.
+
+log 0.4.33 (MIT)
+
+src/lib.rs:1
+// Copyright 2015 The Rust Project Developers. See the COPYRIGHT
+
+src/macros.rs:1
+// Copyright 2014-2015 The Rust Project Developers. See the COPYRIGHT
+
+rand 0.9.5 (MIT)
+
+src/distr/bernoulli.rs:1
+// Copyright 2018 Developers of the Rand project.
+
+src/distr/distribution.rs:2
+// Copyright 2013-2017 The Rust Project Developers.
+
+src/distr/slice.rs:1
+// Copyright 2021 Developers of the Rand project.
+
+src/distr/uniform.rs:1
+// Copyright 2018-2020 Developers of the Rand project.
+
+src/distr/uniform.rs:2
+// Copyright 2017 The Rust Project Developers.
+
+src/rngs/reseeding.rs:2
+// Copyright 2013 The Rust Project Developers.
+
+src/seq/coin_flipper.rs:1
+// Copyright 2018-2023 Developers of the Rand project.
+
+src/seq/iterator.rs:1
+// Copyright 2018-2024 Developers of the Rand project.
+
+rand_chacha 0.9.0 (MIT)
+
+src/chacha.rs:1
+// Copyright 2018 Developers of the Rand project.
+
+src/guts.rs:1
+// Copyright 2019 The CryptoCorrosion Contributors
+
+src/guts.rs:2
+// Copyright 2020 Developers of the Rand project.
+
+rand_core 0.9.5 (MIT)
+
+src/block.rs:1
+// Copyright 2018 Developers of the Rand project.
+
+src/lib.rs:2
+// Copyright 2017-2018 The Rust Project Developers.
+
+src/os.rs:1
+// Copyright 2019 Developers of the Rand project.
+
+ryu 1.0.23 (Apache-2.0)
+
+src/common.rs:4
+// Copyright 2018 Ulf Adams
+
+serde_json 1.0.151 (MIT)
+
+src/lexical/mod.rs:9
+// copyright Alexander Huszagh.
+
+toml 0.8.23 (MIT)
+
+src/map.rs:1
+// Copyright 2017 Serde Developers
+
+unicode-normalization 0.1.25 (MIT)
+
+src/decompose.rs:1
+// Copyright 2012-2015 The Rust Project Developers. See the COPYRIGHT
+
+src/lookups.rs:1
+// Copyright 2019 The Rust Project Developers. See the COPYRIGHT
+
+src/tables.rs:1
+// Copyright 2012-2018 The Rust Project Developers. See the COPYRIGHT
+
+unicode-normalization-alignments 0.1.12 (MIT)
+
+src/decompose.rs:1
+// Copyright 2012-2015 The Rust Project Developers. See the COPYRIGHT
+
+src/lookups.rs:1
+// Copyright 2019 The Rust Project Developers. See the COPYRIGHT
+
+src/tables.rs:1
+// Copyright 2012-2018 The Rust Project Developers. See the COPYRIGHT
+
+unicode-segmentation 1.13.3 (MIT)
+
+src/grapheme.rs:1
+// Copyright 2012-2014 The Rust Project Developers. See the COPYRIGHT
+
+src/lib.rs:1
+// Copyright 2012-2015 The Rust Project Developers. See the COPYRIGHT
+
+src/tables.rs:1
+// Copyright 2012-2018 The Rust Project Developers. See the COPYRIGHT
+
+zerocopy 0.8.55 (MIT)
+
+src/byte_slice.rs:3
+// Copyright 2024 The Fuchsia Authors
+
+src/byteorder.rs:3
+// Copyright 2019 The Fuchsia Authors
+
+src/doctests.rs:3
+// Copyright 2025 The Fuchsia Authors
+
+src/lib.rs:3
+// Copyright 2018 The Fuchsia Authors
+
+src/pointer/mod.rs:3
+// Copyright 2023 The Fuchsia Authors
+
+src/util/macro_util.rs:3
+// Copyright 2022 The Fuchsia Authors

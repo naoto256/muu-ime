@@ -1,0 +1,268 @@
+{
+  "schema": 1,
+  "calls": [
+    {
+      "source": "justfile",
+      "scope": "_candidate-apply-test",
+      "expression": "$scratch_dir/test-input-controller-apply",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "application-lifecycle-test:python",
+      "expression": "sys.argv[1:]",
+      "reason": "Timeout wrapper forwards its CLI argv; the following argv head is inventoried separately.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "application-lifecycle-test:python-argv",
+      "expression": "$app/Contents/MacOS/Lifecycle",
+      "reason": "Locally compiled test executable passed to the timeout wrapper.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "application-startup-test:python",
+      "expression": "sys.argv[1:]",
+      "reason": "Timeout wrapper forwards its CLI argv; the following argv head is inventoried separately.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "application-startup-test:python-argv",
+      "expression": "$app/Contents/MacOS/Startup",
+      "reason": "Locally compiled test executable passed to the timeout wrapper.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "commit-stream-recorder-test",
+      "expression": "$scratch_dir/test-recorder-dogfood",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "dict-reproducibility:substitution",
+      "expression": "${CARGO_TARGET_DIR:-target}/release/muu-dict",
+      "reason": "The workspace muu-dict binary built by the pinned Rust toolchain.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "handle-latency",
+      "expression": "$scratch_dir/measure-session-event",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "header",
+      "expression": "$cbindgen_bin",
+      "reason": "The reviewed CBINDGEN/PATH/Cargo-bin selector; cbindgen is installed by CI.",
+      "dependencies": [
+        "cbindgen"
+      ]
+    },
+    {
+      "source": "justfile",
+      "scope": "header-check",
+      "expression": "$cbindgen_bin",
+      "reason": "The reviewed CBINDGEN/PATH/Cargo-bin selector; cbindgen is installed by CI.",
+      "dependencies": [
+        "cbindgen"
+      ]
+    },
+    {
+      "source": "justfile",
+      "scope": "input-path-contract-trace",
+      "expression": "$scratch_dir/controller",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "mode-icon-bundle-test",
+      "expression": "$scratch_dir/test-mode-icons",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "mode-icon-test",
+      "expression": "$scratch_dir/test-mode-icons",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "model-download-test:python",
+      "expression": "sys.argv[1:]",
+      "reason": "Timeout wrapper forwards its CLI argv; the following argv head is inventoried separately.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "model-download-test:python-argv",
+      "expression": "$scratch_dir/test-model-download",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "justfile",
+      "scope": "session-create-policy-test",
+      "expression": "$destination/$variant",
+      "reason": "Locally compiled test executable in the recipe private output directory.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/audit-installed-mode-icons.swift",
+      "scope": "Process.executableURL",
+      "expression": "tool",
+      "reason": "Private generated large-output fake tool in the process-draining regression test.",
+      "dependencies": [
+        "/bin/bash"
+      ]
+    },
+    {
+      "source": "scripts/install-dev.sh",
+      "scope": "script",
+      "expression": "${script_dir}/reload-ime.sh",
+      "reason": "Sibling repository reload-ime.sh script, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/package-release.py",
+      "scope": "run",
+      "expression": "arguments",
+      "reason": "The local run helper forwards argv; all its literal and just-selector callers are inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/run-rust-test-group.py",
+      "scope": "inventory",
+      "expression": "[executable, '--list', '--format=terse']",
+      "reason": "The Cargo --no-run JSON-selected test binary is invoked only for test listing.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/run-rust-test-group.py",
+      "scope": "inventory",
+      "expression": "[executable, '--list', '--ignored', '--format=terse']",
+      "reason": "The Cargo --no-run JSON-selected test binary is invoked only for test listing.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/rust_toolchain.py",
+      "scope": "main",
+      "expression": "command[0]",
+      "reason": "tool_command resolves cargo/rustc/rustdoc by absolute path from the pinned rustup toolchain.",
+      "dependencies": [
+        "rustup",
+        "cargo",
+        "rustc",
+        "rustdoc"
+      ]
+    },
+    {
+      "source": "scripts/test-build-toolchain.py",
+      "scope": "invoke",
+      "expression": "[str(JUST), '--justfile', str(self.root / 'justfile'), '--working-directory', str(self.root), '--no-deps', recipe, *arguments]",
+      "reason": "The just executable supplied by the recipe is run against the private fake-tool fixture.",
+      "dependencies": [
+        "just"
+      ]
+    },
+    {
+      "source": "scripts/test-c-abi-consumer.py",
+      "scope": "check_consumer",
+      "expression": "[str(consumer), dictionary]",
+      "reason": "The locally compiled C or Swift consumer executable under the test fixture.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-input-controller-apply.swift",
+      "scope": "Process.executableURL",
+      "expression": "Bundle.main.executableURL!",
+      "reason": "The current test binary starts a child mode of itself.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-install-dev.py",
+      "scope": "fixture_command",
+      "expression": "['/bin/' + tool, *args]",
+      "reason": "The fake tool delegates only the mv and rm branches to their absolute system binaries.",
+      "dependencies": [
+        "/bin/mv",
+        "/bin/rm"
+      ]
+    },
+    {
+      "source": "scripts/test-mode-icons.swift",
+      "scope": "Process.executableURL",
+      "expression": "tool",
+      "reason": "Private generated large-output fake tool in the process-draining regression test.",
+      "dependencies": [
+        "/bin/bash"
+      ]
+    },
+    {
+      "source": "scripts/test-store-abi.py",
+      "scope": "run_child",
+      "expression": "[str(self.consumer), mode, str(self.root), str(self.dictionary), str(self.fixtures)]",
+      "reason": "The locally compiled C or Swift consumer executable under the test fixture.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-third-party-license-bundle.sh",
+      "scope": "script",
+      "expression": "$empty_root/scripts/verify-bundled-third-party-licenses.sh",
+      "reason": "A private fixture copy of the repository license verifier, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-third-party-license-bundle.sh",
+      "scope": "script",
+      "expression": "$fixture_root/scripts/verify-bundled-third-party-licenses.sh",
+      "reason": "A private fixture copy of the repository license verifier, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-third-party-license-bundle.sh",
+      "scope": "script",
+      "expression": "$missing_root/scripts/verify-bundled-third-party-licenses.sh",
+      "reason": "A private fixture copy of the repository license verifier, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-third-party-license-bundle.sh",
+      "scope": "script",
+      "expression": "$model_root/scripts/verify-bundled-third-party-licenses.sh",
+      "reason": "A private fixture copy of the repository license verifier, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-third-party-license-bundle.sh",
+      "scope": "script",
+      "expression": "$postal_root/scripts/verify-bundled-third-party-licenses.sh",
+      "reason": "A private fixture copy of the repository license verifier, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-third-party-license-bundle.sh",
+      "scope": "script",
+      "expression": "$zenz_root/scripts/verify-bundled-third-party-licenses.sh",
+      "reason": "A private fixture copy of the repository license verifier, which is also inventoried.",
+      "dependencies": []
+    },
+    {
+      "source": "scripts/test-user-dictionary.swift",
+      "scope": "Process.executableURL",
+      "expression": "Bundle.main.executableURL!",
+      "reason": "The current test binary starts a child mode of itself.",
+      "dependencies": []
+    }
+  ]
+}
